@@ -1,0 +1,14 @@
+{
+  "files": {
+    "media_aluno.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\n\nmedia = (((nota1 * 2.0)  +  (nota2 * 3.0)  +  (nota3 * 5.0)) / 10.0)\n\nprint media\n",
+      "name": "media_aluno.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "83c8e5c643eef80a8b3b681a9b83921a",
+  "iid": 5814274488270848,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "controle_qualidade.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\npeso_produto_antes_descongelar = float(raw_input())\npeso_produto_depois_descongelar = float(raw_input())\n\ndiferenca_peso = (peso_produto_antes_descongelar - peso_produto_depois_descongelar)\nporcentagem_agua = ((diferenca_peso * 100.0) / peso_produto_antes_descongelar) \n\nif (porcentagem_agua < 5):\n\tprint \"%.1f%% do peso do produto \u00e9 de \u00e1gua congelada.\" % porcentagem_agua\n\tprint \"Produto qualis A.\"\n\t\nif (porcentagem_agua >= 5) and (porcentagem_agua < 10):\n\tprint \"%.1f%% do peso do produto \u00e9 de \u00e1gua congelada.\" % porcentagem_agua\n\tprint \"Produto em conformidade.\"\n\t\nif (porcentagem_agua >= 10):\n\tprint \"%.1f%% do peso do produto \u00e9 de \u00e1gua congelada.\" % porcentagem_agua\n\tprint \"Produto n\u00e3o conforme.\"\n",
+      "name": "controle_qualidade.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2ae21eac50fbef31a080d3a893dd5bc7",
+  "iid": 6395961706283008,
+  "activity_revision": "1.0.1"
+}

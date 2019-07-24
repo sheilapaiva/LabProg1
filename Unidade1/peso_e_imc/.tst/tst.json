@@ -1,0 +1,14 @@
+{
+  "files": {
+    "peso_e_imc.py": {
+      "category": "answer",
+      "data": "#ccoding: utf-8\n#cAluna: Sheila Maria Mendes Paiva \n#cMatr\u00edcula: 118210186\n#cUnidade 1 \tQuest\u00e3o: Peso e IMC\n\n#IMC \u00e9 24.9.\n\npeso = float(raw_input())\naltura = float(raw_input())\n\nimc = peso / altura ** 2\npeso_ideal = ((24.9 * (altura ** 2)) - peso)\n\nprint \"IMC atual = %.2f\" % imc\nprint \"Peso a ser ganho/perdido = %.2f\" % peso_ideal\n",
+      "name": "peso_e_imc.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c1d9e9bde2774cdcd45c92d22f08a1a1",
+  "iid": 5725823260688384,
+  "activity_revision": "2.0.0"
+}

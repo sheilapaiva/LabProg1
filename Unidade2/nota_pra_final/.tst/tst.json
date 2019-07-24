@@ -1,0 +1,14 @@
+{
+  "files": {
+    "nota_pra_final.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nmedia_parcial = float(raw_input())\n\nprova_final = ((5 - (media_parcial * 0.6)) / 0.4)\n\nprint \"%.1f\" % prova_final\n",
+      "name": "nota_pra_final.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4344471adbac50a142c3117bd1155092",
+  "iid": 5306744712462336,
+  "activity_revision": "1.2.0"
+}

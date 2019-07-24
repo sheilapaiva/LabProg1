@@ -1,0 +1,18 @@
+{
+  "files": {
+    "classifica_letra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Classifica Letra\n\npalavra = raw_input()\n\nfor i in range(len(palavra)):\n\tletra = palavra[i]\n\tif letra == \"a\" or letra == \"e\" or letra == \"i\" or letra == \"o\" or letra == \"u\" or letra == \"A\" or letra == \"E\" or letra == \"I\" or letra == \"O\" or letra == \"U\":\n\t\tprint \"<%s> sim\" % letra\n\telse:\n\t\tprint \"<%s> nao\" % letra\n",
+      "name": "classifica_letra.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 25.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "186d5b65021e43f04828e0271ea17f48",
+  "iid": 5308261272125440,
+  "activity_revision": "1.0.2"
+}

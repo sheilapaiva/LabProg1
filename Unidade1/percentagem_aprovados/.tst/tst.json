@@ -1,0 +1,14 @@
+{
+  "files": {
+    "percentagem_aprovados.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade 1 \tQuest\u00e3o: Percentegem de aprovados\n\nprint \"An\u00e1lise da Turma\"\nprint \"===\"\nnum_aprovados = int(raw_input(\"N\u00famero de aprovados? \"))\nnum_reprovados = int(raw_input(\"N\u00famero de reprovados? \"))\nprint \"---\"\n\ntotal = (num_aprovados + num_reprovados)\npercentual_aprovados = ((num_aprovados * 100.0) / total)\npercentual_reprovados = ((num_reprovados * 100.0) / total)\n\nprint \"Total de alunos na turma: %d\" % total\nprint \"Aprovados: %d = %.1f%%\" % (num_aprovados, percentual_aprovados)\nprint \"Reprovados: %d = %.1f%%\" % (num_reprovados, percentual_reprovados)\n",
+      "name": "percentagem_aprovados.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "396e201b7ad6f1bfac986e288168a58b",
+  "iid": 6154889352708096,
+  "activity_revision": "1.0.1"
+}

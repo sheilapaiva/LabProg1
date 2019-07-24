@@ -1,0 +1,14 @@
+{
+  "files": {
+    "ingresso-cinema.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum_adultos = int(raw_input())\nnum_criancas  = int(raw_input())\nvalor_ingresso = float(raw_input())\n\nvalor_total = float((valor_ingresso * num_adultos) + ((valor_ingresso * num_criancas)/2))\n\nprint \"Total: R$ \" + str(valor_total)\n",
+      "name": "ingresso-cinema.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "42f365382bdf46ee8ae16245cc607011",
+  "iid": 5288868051943424,
+  "activity_revision": "1.0.0"
+}

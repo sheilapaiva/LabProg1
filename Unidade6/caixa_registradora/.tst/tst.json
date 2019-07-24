@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncaixa_registradora = getattr(undertest, 'caixa_registradora', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n       assert caixa_registradora([1000.0, 2000.0, 5000.0, 2500.0, 950.0], 2000.0) == [11450.0, 1347.5, 'Lucro']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "caixa_registradora.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: Caixa Registradora\n\ndef caixa_registradora(lista, meta):\n\tsoma, comissao = 0, 0\n\tfor i in range(len(lista)):\n\t\tsoma += lista[i]\n\t\tif lista[i] < 1000.0:\n\t\t\tcomissao += (lista[i] * 5) / 100\n\t\telif lista[i] >= 1000.0 and lista[i] < 5000.0:\n\t\t\tcomissao += (lista[i] * 10) / 100\n\t\telif lista[i] >= 5000.0:\n\t\t\tcomissao += (lista[i] * 15) / 100\n\n\tif (soma - comissao) >= meta:\n\t\tsituacao = \"Lucro\"\n\telse:\n\t\tsituacao = \"Prejuizo\"\n\t\n\treturn [soma, comissao, situacao]\n\n",
+      "name": "caixa_registradora.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "44fe64fdeb6cfde345fcde16b0378372",
+  "iid": 4932899652501504,
+  "activity_revision": "1.0.1"
+}

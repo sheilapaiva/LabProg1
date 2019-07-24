@@ -1,0 +1,14 @@
+{
+  "files": {
+    "area_cilindro.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nimport math\n\nprint \"C\u00e1lculo da Superf\u00edcie de um Cilindro\"\nprint \"---\"\n\ndiametro = float(raw_input(\"Medida do di\u00e2metro? \"))\naltura = float(raw_input(\"Medida da altura? \"))\nprint \"---\"\n\nraio = (diametro / 2)\narea_lateral = (2 * math.pi * raio * altura)\narea_base = (math.pi * (raio ** 2))\narea_total = (area_lateral + (2 * area_base))\n\nprint \"\u00c1rea calculada: %.2f\" % area_total\n",
+      "name": "area_cilindro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a568a016e4bb80ab6090b6a5f1bfec74",
+  "iid": 5236245777088512,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "eh_dobro.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\n\nif num1 == (num2 * 2) or num2 == (num1 * 2):\n\tprint \"SIM\"\n\t\nelse:\n\tprint \"NAO\"\n",
+      "name": "eh_dobro.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 2,\n      \"lloc\": 6,\n      \"vhalstead\": 49.83,\n      \"header\": 9\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d73866eb31363c2481155fc407fd368c",
+  "iid": 5894802004508672,
+  "activity_revision": "1.0.3"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "converte_matricula.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Converte Divis\u00edveis\n\nmatricula = raw_input()\n\nmatricula_inicial = \"1\"\nmatricula_final = \"\"\nnumero_zero = \"0\"\nfor i in range(1,5):\n\tmatricula_inicial += matricula[i]\t\nmatricula_final = matricula_inicial\nfor j in range(5, len(matricula)):\n\tnumero_zero += matricula[j]\nmatricula_final += numero_zero\nprint matricula_final\n",
+      "name": "converte_matricula.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"lloc\": 8,\n      \"header\": 3,\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"vhalstead\": 20.9,\n      \"icheckscore\": 0.67\n    }\n  ],\n  \"problem_vocabulary\": [\n    \"utiliz\",\n    \"tipico\",\n    \"quint\",\n    \"zer\",\n    \"tal\",\n    \"sendo\",\n    \"aluno\",\n    \"matricula\",\n    \"digitos\",\n    \"total\",\n    \"inserir\",\n    \"anteri\",\n    \"regras\",\n    \"oito\",\n    \"slice\",\n    \"inic\",\n    \"acima\",\n    \"curso\",\n    \"computaca\",\n    \"numeros\",\n    \"nao\",\n    \"exempl\",\n    \"numer\",\n    \"fazer\",\n    \"apos\",\n    \"basta\",\n    \"passos\",\n    \"ufcg\",\n    \"ciencia\",\n    \"entrada\",\n    \"digit\",\n    \"mudanc\",\n    \"possuindo\",\n    \"atencao\",\n    \"primeiro\",\n    \"passaram\",\n    \"matriculas\",\n    \"possuir\",\n    \"descritas\",\n    \"imprime\",\n    \"antig\",\n    \"said\",\n    \"dois\",\n    \"realiza\",\n    \"nov\",\n    \"execuca\",\n    \"escreva\",\n    \"recebe\",\n    \"formato\",\n    \"us\",\n    \"alteracao\",\n    \"iniciando\",\n    \"conversao\",\n    \"listas\",\n    \"permitido\",\n    \"seguir\",\n    \"trocar\",\n    \"sempr\",\n    \"conforme\"\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "626fbbc68ebac4abb2771b4994867d41",
+  "iid": 5303610795622400,
+  "activity_revision": "1.1.5"
+}

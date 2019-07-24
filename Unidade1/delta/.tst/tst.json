@@ -1,0 +1,14 @@
+{
+  "files": {
+    "delta.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\na = float(raw_input())\nb = float(raw_input())\nc = float(raw_input())\n\ndelta = float((b ** 2) - (4 * a * c))\n\nprint \"%.1f\" % delta\n",
+      "name": "delta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "995928c39d1c4f37a58307081254208a",
+  "iid": 6628188306276352,
+  "activity_revision": "1.1.0"
+}

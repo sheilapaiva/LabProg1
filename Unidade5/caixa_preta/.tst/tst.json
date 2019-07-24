@@ -1,0 +1,14 @@
+{
+  "files": {
+    "caixa_preta.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 5 \tQuest\u00e3o: Caixa Preta (descartando leituras)\n\ncontar_peso, contar_combustivel, contar_altitude = 0,0,0\nwhile True:\n\tlista = raw_input().split(\" \")\n\tpeso = int(lista[0])\n\tcombustivel = int(lista[1])\n\taltitude = int(lista[2])\n\t\n\tif peso >= 0:\n\t\tcontar_peso += 1\n\telse:\n\t\tprint \"dado inconsistente. peso negativo.\"\n\t\tbreak\n\tif combustivel >= 0:\n\t\tcontar_combustivel += 1\n\telse:\n\t\tprint \"dado inconsistente. combust\u00edvel negativo.\"\n\t\tbreak\n\tif altitude >= 0:\n\t\tcontar_altitude += 1\n\telse:\n\t\tprint \"dado inconsistente. altitude negativa.\"\n\t\tbreak\n\nprint \"peso: %d\" % contar_peso\nprint \"combust\u00edvel: %d\" % contar_combustivel\nprint \"altitude: %d\" % contar_altitude\n\n",
+      "name": "caixa_preta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "70e35337107a74c527f3629932bee663",
+  "iid": 5337702601850880,
+  "activity_revision": "1.0.1"
+}

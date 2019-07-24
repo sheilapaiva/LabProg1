@@ -1,0 +1,18 @@
+{
+  "files": {
+    "concurso.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnota1_candidato1 = float(raw_input())\nnota2_candidato1 = float(raw_input())\nnota3_candidato1 = float(raw_input())\nidade_candidato1 = int(raw_input())\nnota1_candidato2 = float(raw_input())\nnota2_candidato2 = float(raw_input())\nnota3_candidato2 = float(raw_input())\nidade_candidato2 = int(raw_input())\n\nmedia_cadidato1 = (((nota1_candidato1 * 0.3) + (nota2_candidato1 * 0.4) + (nota3_candidato1 * 0.3)) / 1)\nmedia_cadidato2 = (((nota1_candidato2 * 0.3) + (nota2_candidato2 * 0.4) + (nota3_candidato2 *  0.3)) / 1)\n\nif (media_cadidato1 > media_cadidato2):\n\tprint \"O primeiro candidato foi aprovado com m\u00e9dia %.1f.\" % media_cadidato1\n\nif (media_cadidato1 < media_cadidato2):\n\tprint \"O segundo candidato foi aprovado com m\u00e9dia %.1f.\" % media_cadidato2\n\t\nif (media_cadidato1 == media_cadidato2):\n\tif (idade_candidato1 > idade_candidato2):\n\t\tprint \"O primeiro candidato foi aprovado com m\u00e9dia %.1f.\" % media_cadidato1\n\t\t\n\tif (idade_candidato1 < idade_candidato2):\n\t\tprint \"O segundo candidato foi aprovado com m\u00e9dia %.1f.\" % media_cadidato2\n\t\t\n\tif (idade_candidato1 == idade_candidato2):\n\t\tprint \"Empate.\"\n",
+      "name": "concurso.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 262.33,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3a25f18f337b1b2704f5ae591cae8107",
+  "iid": 5897140043776000,
+  "activity_revision": "1.0.2"
+}

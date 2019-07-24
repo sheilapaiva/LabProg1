@@ -1,0 +1,14 @@
+{
+  "files": {
+    "votacao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Elei\u00e7\u00e3o na ADUF\n\nabstencao = int(raw_input())\na_favor = int(raw_input())\ncontra = int(raw_input())\n\nporcentagem_abstencao = float(abstencao * 100) / (abstencao + a_favor + contra)\nporcentagem_favor = float(a_favor * 100) / (abstencao + a_favor + contra)\nporcentagem_contra = float(contra * 100) / (abstencao + a_favor + contra)\n\nprint \"Resultado da Vota\u00e7\u00e3o\"\nprint\nprint abstencao, \"absten\u00e7\u00f5es (%.2f%%)\" % porcentagem_abstencao\nprint a_favor, \"a favor (%.2f%%)\" % porcentagem_favor\nprint contra, \"contra (%.2f%%)\" % porcentagem_contra\n",
+      "name": "votacao.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6a0eabed8504500f5a6ae2ccfd562f2c",
+  "iid": 6311673241534464,
+  "activity_revision": "1.0.0"
+}

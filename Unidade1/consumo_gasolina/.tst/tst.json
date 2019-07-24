@@ -1,0 +1,14 @@
+{
+  "files": {
+    "consumo-gasolina.py": {
+      "category": "answer",
+      "data": "pos_inicial = float(raw_input())\nlitros_inicial = float(raw_input())\npos_final = float(raw_input())\nlitros_final = float(raw_input())\n\ndist = pos_final - pos_inicial\ndelta_consumo = litros_inicial - litros_final\n\nprint '%.1f' % (dist / delta_consumo)\n",
+      "name": "consumo-gasolina.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "85094ca5541c4617abf39c5687e55a93",
+  "iid": 4744145268637696,
+  "activity_revision": "1.0.0"
+}

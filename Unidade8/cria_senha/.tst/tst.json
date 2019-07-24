@@ -1,0 +1,14 @@
+{
+  "files": {
+    "cria_senha.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Cria Senha\n\n\ndef criaSenhaFraca(palavra):\n\tsenha_nova = \"((\" + palavra + \"))\"\n\tprint senha_nova\n\t\n\ndef criaSenhaForte(palavra):\n\tsenha_nova = \"((\"\n\tfor i in palavra:\n\t\tif i == \"o\" or i == \"O\":\n\t\t\tsenha_nova += \"0\"\n\t\telif i == \"i\" or i == \"I\" or i == \"L\" or i == \"l\":\n\t\t\tsenha_nova += \"1\"\n\t\telif i == \"e\" or i == \"E\":\n\t\t\tsenha_nova += \"3\"\n\t\telif i == \"a\" or i == \"A\":\n\t\t\tsenha_nova += \"4\"\n\t\telif i == \"b\" or i == \"B\":\n\t\t\tsenha_nova += \"6\"\n\t\telif i == \"t\" or i == \"T\":\n\t\t\tsenha_nova += \"7\"\n\t\telse:\n\t\t\tsenha_nova += i\n\t\t\n\tsenha_nova += \"))\"\n\tprint senha_nova\n\n\nwhile True:\n\tpalavras = raw_input()\n\tif palavras == \"***\":\n\t\tbreak\n\telse:\n\t\tsenha, nivel_seguranca = palavras.split()\n\t\tif nivel_seguranca == \"fraco\":\n\t\t\tcriaSenhaFraca(senha)\n\t\telif nivel_seguranca == \"forte\":\n\t\t\tcriaSenhaForte(senha)\n",
+      "name": "cria_senha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "146bbd81183b1998c8e6227863d0f8a6",
+  "iid": 4517758783979520,
+  "activity_revision": "1.0.0"
+}

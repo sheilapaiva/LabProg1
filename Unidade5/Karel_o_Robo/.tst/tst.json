@@ -1,0 +1,18 @@
+{
+  "files": {
+    "Karel_o_Robo.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 5 \tQuest\u00e3o: Karel o Rob\u00f4\nx, y = 0, 0\nwhile True:\n\tcoordenada = raw_input().split()\n\tdirecao = coordenada[0]\n\tunidade_movimento = int(coordenada[1])\n\tif unidade_movimento == 0:\n\t\tprint \"Fim de jogo\"\n\t\tbreak\n\telse:\n\t\tif direcao == \"E\":\n\t\t\tx -= unidade_movimento\n\t\telif direcao == \"D\":\n\t\t\tx += unidade_movimento\n\t\telif direcao == \"B\":\n\t\t\ty -= unidade_movimento\n\t\telif direcao == \"C\":\n\t\t\ty += unidade_movimento\n\tif abs(x) > 0 and abs(y) == abs(x) * 2:\n\t\tprint \"Parab\u00e9ns, conquista do portal (%d, %d)\" % (x, y)\n\t\tbreak\n",
+      "name": "Karel_o_Robo.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 225.72,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2695674b922016c22666db1186e6991e",
+  "iid": 5873382633504768,
+  "activity_revision": "1.0.1"
+}

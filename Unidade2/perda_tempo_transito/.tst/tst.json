@@ -1,0 +1,14 @@
+{
+  "files": {
+    "perda_tempo_transito.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\nnum3 = int(raw_input())\nnum4 = int(raw_input())\nnum5 = int(raw_input())\n\nminutos_perdidos = (num1 + num2 + num3 + num4 + num5)\nmedia_minutos_perdidos = ((num1 + num2 + num3 + num4 + num5) / 5.0)\nprodutividade = ((minutos_perdidos * 100.0) / (120.0 * 60.0))\nepisodios = (minutos_perdidos / 50)\n\nprint \"Voc\u00ea perdeu %d min na semana (m\u00e9dia de %.1f min por dia).\" % (minutos_perdidos, media_minutos_perdidos)\nprint \"Isso significa %.2f%% da sua semana produtiva.\" % produtividade\nprint \"Daria para assistir %d epis\u00f3dio(s) de House.\" % episodios\n",
+      "name": "perda_tempo_transito.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b3652eb6365c4693d5681611e19c343e",
+  "iid": 5122469039964160,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "passagem_aerea.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ndistancia = float(raw_input())\naliquota = float(raw_input())\n\npassagem = ((distancia * aliquota) + 51.00)\n\n\nprint \"Valor da passagem: R$ %.2f\\n\" % passagem\n\nprint \"Pagamento:\"\nprint \"1. \u00c0 vista. R$ %.2f\" % (passagem - (passagem * 0.25))\nprint \"2. Em 6 parcelas. Total: R$ %.2f\" % (passagem - (passagem * 0.05))\nprint \"   6 x R$ %.2f\" % ((passagem - (passagem * 0.05)) / 6)\nprint \"3. Em 10 parcelas. Total: R$ %.2f\" % passagem\nprint \"   10 x R$ %.2f\" % (passagem / 10)\n",
+      "name": "passagem_aerea.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ee9ddd31a5b5acaf52770c18f88a2e44",
+  "iid": 5784122005913600,
+  "activity_revision": "2.0.0"
+}

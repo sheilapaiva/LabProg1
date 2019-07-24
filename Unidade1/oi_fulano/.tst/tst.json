@@ -1,0 +1,14 @@
+{
+  "files": {
+    "oi_fulano.py": {
+      "category": "answer",
+      "data": "#coding:  utf-8\n\nnome = str(raw_input())\n\nprint \"Oi \" + nome\n",
+      "name": "oi_fulano.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c1fb78b5db9502584976b123e8d674f2",
+  "iid": 6080770498101248,
+  "activity_revision": "1.12.1"
+}

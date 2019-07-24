@@ -1,0 +1,18 @@
+{
+  "files": {
+    "avaliacao_docente.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nn = int(raw_input())\npontuacao_atividades = float(raw_input())\nproducao_intelectual = float(raw_input())\natividades_orientacao = float(raw_input())\natividades_administrativas = float(raw_input())\n\nif n < 4:\n\tprint \"Promo\u00e7\u00e3o indeferida. N\u00famero de semestres insuficiente.\"\n\t\nif n >= 4:\n\tif pontuacao_atividades >= 320 and producao_intelectual >= 100 and atividades_orientacao >= 20:\n\t\tif atividades_administrativas < 120:\n\t\t\tprint \"Promo\u00e7\u00e3o indeferida. M\u00e9dia insuficiente.\"\n\n\t\telse:\n\t\t\tprint \"Promo\u00e7\u00e3o deferida. Parab\u00e9ns!\"\n\telse:\n\t\tprint \"Promo\u00e7\u00e3o indeferida. Pontua\u00e7\u00e3o m\u00ednima n\u00e3o alcan\u00e7ada.\"\n",
+      "name": "avaliacao_docente.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 136.16,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8d10dd943403a595492b0ed6722c3fb9",
+  "iid": 5244651028086784,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "bolsas_cnpq.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade 4 \tQuest\u00e3o: Bolsas do CNPq\n\nsaldo_temporario = 0\nsaldo = 0\nmes_com_maior_saldo = 0\n\nfor i in range(12):\n\tgasto_mes = int(raw_input())\n\tsaldo = ((saldo + 500) - gasto_mes)\n\t\t\n\tif saldo >= saldo_temporario:\n\t\tsaldo_temporario = saldo\n\t\tmes_com_maior_saldo = i\n\t\t\nif mes_com_maior_saldo == 0:\n\tprint \"jan\"\n\nelif mes_com_maior_saldo == 1:\n\tprint \"fev\"\n\nelif mes_com_maior_saldo == 2:\n\tprint \"mar\"\n\nelif mes_com_maior_saldo == 3:\n\tprint \"abr\"\n\nelif mes_com_maior_saldo == 4:\n\tprint \"mai\"\n\t\nelif mes_com_maior_saldo == 5:\n\tprint \"jun\"\n\nelif mes_com_maior_saldo == 6:\n\tprint \"jul\"\n\nelif mes_com_maior_saldo == 7:\n\tprint \"ago\"\n\nelif mes_com_maior_saldo == 8:\n\tprint \"set\"\n\t\nelif mes_com_maior_saldo == 9:\n\tprint \"out\"\n\t\nelif mes_com_maior_saldo == 10:\n\tprint \"nov\"\n\nelif mes_com_maior_saldo == 11:\n\tprint \"dez\"\n",
+      "name": "bolsas_cnpq.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"lloc\": 12,\n      \"header\": 3,\n      \"cc\": 4,\n      \"pep8\": 14,\n      \"vhalstead\": 72.0,\n      \"icheckscore\": 1.0\n    }\n  ],\n  \"problem_vocabulary\": [\n    \"sao\",\n    \"consid\",\n    \"sab\",\n    \"ano\",\n    \"consiste\",\n    \"not\",\n    \"inteiros\",\n    \"sendo\",\n    \"long\",\n    \"gastos\",\n    \"computacao\",\n    \"logo\",\n    \"ter\",\n    \"total\",\n    \"estud\",\n    \"out\",\n    \"outubr\",\n    \"apen\",\n    \"curso\",\n    \"dezembro\",\n    \"inicio\",\n    \"simplicidade\",\n    \"mensais\",\n    \"fazer\",\n    \"pagamentos\",\n    \"valor\",\n    \"ped\",\n    \"ufcg\",\n    \"pass\",\n    \"todos\",\n    \"pagar\",\n    \"desse\",\n    \"bast\",\n    \"acumul\",\n    \"receb\",\n    \"janeiro\",\n    \"gostaria\",\n    \"desp\",\n    \"fornecidos\",\n    \"execucao\",\n    \"tempo\",\n    \"saida\",\n    \"saldo\",\n    \"exemplo\",\n    \"mes\",\n    \"imprimir\",\n    \"mai\",\n    \"cnpq\",\n    \"seletiva\",\n    \"acumulou\",\n    \"conseguiu\",\n    \"tod\",\n    \"escreva\",\n    \"bolsa\",\n    \"cada\",\n    \"tomou\",\n    \"duracao\",\n    \"acumulado\",\n    \"valores\",\n    \"ult\",\n    \"organiz\",\n    \"letr\",\n    \"correspondem\",\n    \"entrada\",\n    \"determin\",\n    \"sido\",\n    \"primeiras\",\n    \"tres\",\n    \"economizando\",\n    \"observ\",\n    \"dev\"\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "59c11c3289e9b39329025dd05a8abebc",
+  "iid": 5040989248946176,
+  "activity_revision": "1.0.1"
+}

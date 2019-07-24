@@ -1,0 +1,14 @@
+{
+  "files": {
+    "embarque_organizado.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 5 \tQuest\u00e3o: Embarque Organizado\n\norganizado = \"\"\nwhile True:\n\tsequencia = raw_input().split()\n\tfor i in range(len(sequencia)):\n\t\tif i > 0 and int(sequencia[i]) % 2 != 0 and int(sequencia[i - 1]) % 2 == 0:\n\t\t\torganizado = \"erro\"\n\t\t\tbreak\n\t\telse:\n\t\t\torganizado = \"ok\"\n\tbreak\nprint organizado\n",
+      "name": "embarque_organizado.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b1d29965577f7cf58f6cdced1d1bb75a",
+  "iid": 5243010283470848,
+  "activity_revision": "1.0.1"
+}

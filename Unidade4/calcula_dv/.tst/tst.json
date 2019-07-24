@@ -1,0 +1,18 @@
+{
+  "files": {
+    "calcula_dv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Calcula DV\n\nnumero_conta = raw_input()\nlista = list(numero_conta)\n\nsomar_numero_posicoes_pares = 0\nfor i in range(len(lista)):\n\tlista[i] = int(lista[i])\n\tif i % 2 == 0:\n\t\tsomar_numero_posicoes_pares += lista[i]\n\nsomar_numero_posicoes_impares = 0\nfor i in range(len(lista)):\n\tlista[i] = int(lista[i])\n\tif i % 2 != 0:\n\t\tsomar_numero_posicoes_impares += lista[i]\n\ndigito_verificador = ((somar_numero_posicoes_pares * somar_numero_posicoes_impares) % 11)\nif digito_verificador == 10:\n\tprint \"%s-X\" % numero_conta\nelse:\n\tprint \"%s-%d\" % (numero_conta, digito_verificador)\n",
+      "name": "calcula_dv.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 11,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "afd1e0ae9d5496d52d3c03b996face3c",
+  "iid": 5202336909623296,
+  "activity_revision": "1.1.2"
+}

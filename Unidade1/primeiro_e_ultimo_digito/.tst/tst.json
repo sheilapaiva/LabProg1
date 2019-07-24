@@ -1,0 +1,14 @@
+{
+  "files": {
+    "primeiro_e_ultimo_digito.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 1 \tQuest\u00e3o: Primeiro e \u00daltimo\n\nnumero = int(raw_input())\n\nprimeiro_digito = (numero / 1000)\nsegundo_digito = (numero % 10)\n\nprint \"%d %d\" % (primeiro_digito, segundo_digito) \n",
+      "name": "primeiro_e_ultimo_digito.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8eda8fc2e3c7c2ec62753f8ed42a1021",
+  "iid": 4930887359660032,
+  "activity_revision": "1.0.2"
+}

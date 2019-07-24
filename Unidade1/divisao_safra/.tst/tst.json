@@ -1,0 +1,14 @@
+{
+  "files": {
+    "divisao_safra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 1 \tQuest\u00e3o: Divis\u00e3o Safra\n\nqtd_graos = float(raw_input())\nqtd_clientes_atacado = float(raw_input())\nqtd_clientes_varejo = float(raw_input())\n\nvarejo = int(qtd_graos / qtd_clientes_atacado)\na = float(qtd_graos % qtd_clientes_atacado)\natacado = float(a / qtd_clientes_varejo)\nf = \"%.2f\" % atacado\n\nprint \"Clientes no atacado = %.dkg cada.\" % varejo\nprint \"Clientes no varejo = \" + str(f) + \"kg cada.\"\n",
+      "name": "divisao_safra.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5abc5d3ca5a2765386d03f9727f5d7da",
+  "iid": 6291331605331968,
+  "activity_revision": "1.1.0"
+}

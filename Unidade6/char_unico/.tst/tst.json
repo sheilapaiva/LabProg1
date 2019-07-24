@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nchar_unico = getattr(undertest, 'char_unico', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert char_unico(\"aa***xxxzzb+++\") == \"b\"\n\n   def test_string_vazia(self):\n       assert char_unico(\"kkkkrrrrgppp\") == \"g\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "char_unico.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: Char \u00fanico\n\ndef char_unico(string):\n\tcont_aux, letra_unica = len(string), \"\"\n\tfor i in range(len(string)):\n\t\tcont = 0\n\t\tfor j in range(len(string)):\n\t\t\tif string[i] == string[j]:\n\t\t\t\tcont += 1\n\t\tprint cont\n\t\tif cont < cont_aux:\n\t\t\tcont_aux = cont\n\t\t\tletra_unica = string[i] \n\t\t\t\n\treturn letra_unica\n",
+      "name": "char_unico.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0d606bff77fa25a1885c3a654e144277",
+  "iid": 5495244082642944,
+  "activity_revision": "1.0.0"
+}

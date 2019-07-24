@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "3\n2 3\n0 0\n5 7\n",
+      "output": "5.00\n",
+      "type": "io"
+    },
+    {
+      "category": "public",
+      "input": "1\n2 2\n",
+      "output": "Não é possível calcular a média.\n",
+      "type": "io"
+    }
+  ]
+}

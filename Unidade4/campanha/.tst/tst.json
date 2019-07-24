@@ -1,0 +1,14 @@
+{
+  "files": {
+    "campanha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Campanha\n\nresultado = []\nlista_pontos = []\npro = 0\ncontra = 0\nvitorias_casa = 0\nderrotas_casa = 0\nempates_casa = 0\nvitorias_fora = 0\nderrotas_fora = 0\nempates_fora = 0\npalavra = \"\"\nfor i in range(10):\n\tresultado = raw_input().split(\" \")\n\tpalavra = resultado[1]\n\tif palavra == \"(c)\":\n\t\tlista_pontos = resultado[0].split(\"x\")\n\t\tm = int(lista_pontos[0])\n\t\tn = int(lista_pontos[1])\n\t\tpro += m\n\t\tcontra += n \n\t\tif m > n:\n\t\t\tvitorias_casa += 1\n\t\telif m < n:\n\t\t\tderrotas_casa += 1\n\t\telse:\n\t\t\tempates_casa += 1\n\t\t\t\n\tif palavra == \"(f)\":\n\t\tlista_pontos = resultado[0].split(\"x\")\n\t\tn = int(lista_pontos[0])\n\t\tm = int(lista_pontos[1])\n\t\tpro += m\n\t\tcontra += n \n\t\tif m > n:\n\t\t\tvitorias_fora += 1\n\t\telif m < n:\n\t\t\tderrotas_fora += 1\n\t\telse:\n\t\t\tempates_fora += 1\n\t\t\t\nvitorias = vitorias_casa + vitorias_fora\nempates = empates_casa + empates_fora\t\nderrotas = derrotas_casa + derrotas_fora\nprint \"%dv, %de, %dd\" % (vitorias, empates, derrotas)\npontos = (((vitorias_casa + vitorias_fora) * 3) + empates)\nprint \"pontos: %d\" % pontos\nsaldo = pro - contra\nprint \"saldo: %d (%d pro, %d contra)\" % (saldo, pro, contra)\npontos_casa = ((vitorias_casa * 3) + empates_casa)\nprint \"pontos em casa: %d\" % pontos_casa\npontos_fora = ((vitorias_fora * 3) + empates_fora)\nprint \"pontos fora: %d\" % pontos_fora\n",
+      "name": "campanha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8bdf173f526f273a9582c6cdc8b08eb2",
+  "iid": 5188283273314304,
+  "activity_revision": "1.0.1"
+}

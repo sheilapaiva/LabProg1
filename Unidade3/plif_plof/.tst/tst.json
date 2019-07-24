@@ -1,0 +1,18 @@
+{
+  "files": {
+    "plif_plof.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\nnum3 = int(raw_input())\n\nsomatorio = (num1 + num2 + num3)\n\nif somatorio % 3 == 0 and somatorio % 5 == 0:\n\tprint \"plifplof\"\n\nelif somatorio % 5 == 0:\n\tprint \"plof\"\n\t\nelif somatorio % 3 == 0:\n\tprint \"plif\"\n\t\nelse: \n\tprint somatorio\n",
+      "name": "plif_plof.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 137.61,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bf8c9dcb78f8b5376d67aeabe6b33fed",
+  "iid": 6143315355369472,
+  "activity_revision": "1.1.2"
+}

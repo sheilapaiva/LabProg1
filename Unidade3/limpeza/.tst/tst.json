@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limpeza.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nopcao = int(raw_input())\n\nif opcao == 1:\n\ttamanho_tanque = float(raw_input())\n\tvalor = (tamanho_tanque * 80.)\n\tprint \"R$ %d,00\" % valor\n\tif valor >= 200:\n\t\tprint \"Brinde!\"\n\nif opcao == 2:\n\ttamanho_tanque = float(raw_input())\n\tvalor = (tamanho_tanque * 50.)\n\tprint \"R$ %d,00\" % valor\n\tif valor >= 200:\n\t\tprint \"Brinde!\"\n\t\nif opcao == 3:\n\tprint \"R$ 50,00\"\n",
+      "name": "limpeza.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 66.61,\n      \"header\": 2\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4a089f31541a3c634d652b31431bcf89",
+  "iid": 5313390234828800,
+  "activity_revision": "1.0.3"
+}

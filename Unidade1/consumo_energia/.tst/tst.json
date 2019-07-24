@@ -1,0 +1,14 @@
+{
+  "files": {
+    "consumo-energia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Calculando o consumo de energia em Joules\n\npotencia = float(raw_input())\ntempo = float(raw_input())\npotencia_convertida = float(potencia / 1000)\ntempo_convertido = float(tempo / 60)\n\nprint str(potencia_convertida * tempo_convertido) + ' kWh'\n",
+      "name": "consumo-energia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "223a7067b2408a9f12d9c8532ac216e2",
+  "iid": 6302762862116864,
+  "activity_revision": "1.0.0"
+}

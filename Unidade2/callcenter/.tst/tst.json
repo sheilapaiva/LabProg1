@@ -1,0 +1,14 @@
+{
+  "files": {
+    "callcenter.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ndia1 = float(raw_input())\ndia2 = float(raw_input())\ndia3 = float(raw_input())\ndia4 = float(raw_input())\ndia5 = float(raw_input())\ndia6 = float(raw_input())\ndia7 = float(raw_input())\n\ntotal = float(dia1 + dia2 + dia3 + dia4 + dia5 + dia6 + dia7)\nmedia = (total / 7)\n\nprint \"Total: %.d\" % int(total)\nprint \"M\u00e9dia: %.2f\" % media\n",
+      "name": "callcenter.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6d355872cebe9320b172354335b64475",
+  "iid": 5451985943789568,
+  "activity_revision": "1.0.3"
+}

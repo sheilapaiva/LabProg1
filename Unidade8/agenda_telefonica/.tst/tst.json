@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agenda_telefonica.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Agenda Telef\u00f4nica\n\ndef ordenar(lista_nome, lista_telefone):\n\tta_ordenado = True\n\twhile ta_ordenado  == True:\n\t\tta_ordenado = False\n\t\tfor i in range(len(lista_nome) -1):\n\t\t\tif lista_nome[i] > lista_nome[i + 1]:\n\t\t\t\tlista_nome[i], lista_nome[i + 1] = lista_nome[i + 1], lista_nome[i]\n\t\t\t\tlista_telefone[i], lista_telefone[i + 1] = lista_telefone[i + 1], lista_telefone[i]\n\t\t\t\tta_ordenado  = True\n\t\t\t\tbreak\n\n\treturn lista_nome, lista_telefone\t\n\n\ndef inserir(lista_nome, lista_telefone):\n\tquantidade = int(raw_input())\n\tfor i in range(quantidade):\n\t\tlista_nome.append(raw_input())\n\t\tlista_telefone.append(raw_input())\n\t\tordenar(lista_nome, lista_telefone)\n\t\n\treturn lista_nome, lista_telefone\n\t\n\t\ndef buscar(lista_nome, lista_telefone):\n\tnome = raw_input()\n\tnome_encontrado = False\n\tfor i in range(len(lista_nome)):\n\t\tif nome == lista_nome[i]:\n\t\t\tprint \"Nome: %s\" % lista_nome[i]\n\t\t\tprint \"Fone: %s\" % lista_telefone[i]\n\t\t\tprint \"----------\"\n\t\t\tnome_encontrado = True\n\tif nome_encontrado == False:\n\t\tprint \"Nome inexistente\"\n\t\tprint \"----------\"\n\t\t\t\n\treturn lista_nome, lista_telefone\n\t\t\t\n\t\t\t\ndef imprimir(lista_nome, lista_telefone):\n\tfor i in range(len(lista_nome)):\n\t\tprint \"Nome: %s\" % lista_nome[i]\n\t\tprint \"Fone: %s\" % lista_telefone[i]\n\t\tprint \"----------\"\n\t\t\t\n\treturn lista_nome, lista_telefone\n\t\n\nagenda_nome, agenda_telefone = [], []\nwhile True:\n\toperacao = raw_input()\n\tif operacao == \"finalizar\": \n\t\tbreak\n\telse:\n\t\tif operacao == \"inserir\":\n\t\t\tinserir(agenda_nome, agenda_telefone)\n\t\telif operacao == \"buscar\":\n\t\t\tbuscar(agenda_nome, agenda_telefone)\n\t\telif operacao == \"imprimir\":\n\t\t\timprimir(agenda_nome, agenda_telefone)\n",
+      "name": "agenda_telefonica.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "655258f3e99473cf43aa71807adca61f",
+  "iid": 5806080999292928,
+  "activity_revision": "1.0.0"
+}

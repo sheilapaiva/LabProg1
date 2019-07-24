@@ -1,0 +1,14 @@
+{
+  "files": {
+    "corrige-media.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# C\u00e1lculo da m\u00e9dia em \u00c1lgebra Vetorial\n\nnota1 = float(10)\nnota2 = float(5)\n\nmedia = ((nota1 + nota2) / 2)\n\nprint \"Nota 1: %4.1f\" % nota1\nprint \"Nota 2: %4.1f\" % nota2\nprint \"M\u00e9dia : %4.1f\" % media\n",
+      "name": "corrige-media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "62e94a1b5272e5ec055a4a5cf81b15e7",
+  "iid": 5210784573423616,
+  "activity_revision": "1.1.0"
+}

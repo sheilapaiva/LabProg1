@@ -1,0 +1,14 @@
+{
+  "files": {
+    "indices_caracteres.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 4 \tQuest\u00e3o: \u00cdndices de caracteres\n\npalavra1 = raw_input()\npalavra2 = raw_input()\n\nfor i in range(len(palavra2)):\n\tindices = \"\"\n\tfor j in range(len(palavra1)):\n\t\tif palavra2[i] == palavra1[j] and len(indices) > 0:\n\t\t\tindices += \" \" + str(j)\n\t\telif palavra2[i] == palavra1[j] and indices == \"\":\n\t\t\tindices += str(j)\n\tif indices == \"\":\n\t\tprint -1\n\telse:\n\t\tprint indices\n",
+      "name": "indices_caracteres.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "84293940e2cd03084c856032f26a70bd",
+  "iid": 5248888516640768,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "imprime_sequencias.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 5 \tQuest\u00e3o: Imprime Sequencias\n\nnumero_alvo = int(raw_input())\nlista_maiores, cont = [], 0\nwhile True:\n\tsequencia = raw_input()\n\tif sequencia == \"fim\":\n\t\tbreak\n\telse:\n\t\tcont += 1\n\t\tlista_sequencia = sequencia.split()\n\t\tconta_maiores = 0\n\t\tfor i in range(len(lista_sequencia)):\n\t\t\tif int(lista_sequencia[i]) > numero_alvo:\n\t\t\t\tconta_maiores += 1 \n\t\tif conta_maiores > (len(lista_sequencia) / 2):\n\t\t\tlista_maiores.append(\"sequencia %d: %s\" % (cont, sequencia))\nfor i in range(len(lista_maiores)):\n\tprint lista_maiores[i]\n\n",
+      "name": "imprime_sequencias.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8939735f8d4d515ddbaca4c71f0453af",
+  "iid": 5860431528722432,
+  "activity_revision": "1.0.3"
+}

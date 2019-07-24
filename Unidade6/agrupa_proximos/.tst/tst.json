@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nagrupa_proximos = getattr(undertest, 'agrupa_proximos', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n       l = [1,2,3,4,8,22,3,5]\n       assert agrupa_proximos(l,4,2) == [3,4,3,5]\n       assert l == [1,2,3,4,8,22,3,5]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "agrupa_proximos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: Agrupa Pr\u00f3ximos\n\ndef agrupa_proximos(lista, valor, criterio):\n\tl = []\n\tfor i in range(len(lista)):\n\t\tif abs(lista[i] - valor) < criterio:\n\t\t\tl.append(lista[i])\n\treturn l\n",
+      "name": "agrupa_proximos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2e203f682be0914fb276f3838bce961a",
+  "iid": 4942612318388224,
+  "activity_revision": "1.0.2"
+}

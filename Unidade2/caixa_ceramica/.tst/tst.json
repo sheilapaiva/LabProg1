@@ -1,0 +1,14 @@
+{
+  "files": {
+    "caixa_ceramica.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ncapacidade = float(raw_input(\"Capacidade de revestimento? \"))\nprint \"\"\n\nprint \"== Dados do v\u00e3o a revestir ==\"\ncomprimento = float(raw_input(\"Comprimento? \"))\nlargura = float(raw_input(\"Largura? \"))\naltura = float(raw_input(\"Altura? \"))\n\nlateral1 = float(2 * (comprimento * altura))\nlateral2 = float(2 * (largura * altura))\nbase = float(comprimento * largura)\narea_total = float(lateral1 + lateral2 + base)\nnum_caixas = int(area_total / capacidade)\n\nprint \"\"\nprint \"== Resultados ==\"\nprint \"\u00c1rea total a revestir: %.1f m2\" % area_total\nprint \"N\u00famero de caixas: %d\" % num_caixas\n",
+      "name": "caixa_ceramica.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "79376bb4bfc344148c2d623834f503ac",
+  "iid": 4974784743997440,
+  "activity_revision": "1.1.0"
+}

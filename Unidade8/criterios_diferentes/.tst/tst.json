@@ -1,0 +1,19 @@
+{
+  "files": {
+    "criterios_diferentes.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Crit\u00e9rios Diferentes\n\ndef ordena(lista1,lista2):\n\tlista_nova = []\n\t\n\tfor elemento_l1 in lista1:\n\t\tlista_nova.append(elemento_l1)\n\t\t\n\tfor elemento_l2 in lista2:\n\t\tlista_nova.append(elemento_l2)\n\t\t\n\tta_ordenado = True\n\twhile ta_ordenado  == True:\n\t\t ta_ordenado = False\n\t\t for i in range(len(lista_nova) -1):\n\t\t\t if lista_nova[i] > lista_nova[i + 1]:\n\t\t\t\t lista_nova[i], lista_nova[i + 1] = lista_nova[i + 1], lista_nova[i]\n\t\t\t\t ta_ordenado  = True\n\t\t\t\t break\n\n\treturn lista_nova\n",
+      "name": "criterios_diferentes.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\nimport unittest\nimport sys\nimport imp\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1_base(self):\n        l1 = [8, 12, 78, 79, 511]\n        l2 = [302, 121, 8, 7]\n        assert ordena(l1, l2) == [7, 8, 8, 12, 78, 79, 121, 302, 511]\n        assert l1 == [8, 12, 78, 79, 511]\n        assert l2 == [302, 121, 8, 7]\n        \n    def test_exemplo(self):\n        assert ordena([3.9,4.0],[1.9]) == [1.9,3.9,4.0]\n\n\nif __name__ == '__main__':\n    undertest = imp.load_source(\"undertest\", sys.argv[-1])\n    ordena = undertest.ordena\n    del sys.argv[-1]\n    unittest.main()\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "58d97fb68372b1afcdada3b416fdbc5e",
+  "iid": 5327996323889152,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 72.0,\n      \"header\": 4\n    }\n  ]\n}"
+    },
+    "conta_divisiveis.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Conta Divis\u00edveis\n\nnumero_divisor = int(raw_input())\ntamanho_sequencia = int(raw_input())\n\ncont = 0\nfor i in range(tamanho_sequencia):\n\tnumero_sequencia = float(raw_input())\n\t\n\tif numero_sequencia % numero_divisor == 0:\n\t\tcont += 1\n\nporcetagem = ((cont * 100.) / tamanho_sequencia)\n\nprint \"%d (%.1f%%)\" % (cont, porcetagem)\n",
+      "name": "conta_divisiveis.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fac71983bbc3de993d63dafb0e9b1e20",
+  "iid": 5877878793175040,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "area_figuras.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nimport math\n\nfigura = str(raw_input())\n\nif figura == \"tri\u00e2ngulo\":\n\tbase = float(raw_input())\n\taltura = float(raw_input())\n\t\n\tarea = float((base * altura) / 2)\n\t\n\tprint \"\u00c1rea do tri\u00e2ngulo: %.2f (cm2)\" % area\n\nelif figura == \"quadrado\":\n\tlado = float(raw_input())\n\t\n\tarea = float(lado ** 2)\n\t\n\tprint \"\u00c1rea do quadrado: %.2f (cm2)\" % area\n\t\nelif figura == \"c\u00edrculo\":\n\traio = float(raw_input())\n\t\n\tarea = float(math.pi * raio ** 2)\n\t\n\tprint \"\u00c1rea do c\u00edrculo: %.2f (cm2)\" % area\n\t\nelse:\n\tbase = float(raw_input())\n\taltura = float(raw_input())\n\t\n\tarea = float(base * altura)\n\t\n\tprint \"\u00c1rea do ret\u00e2ngulo: %.2f (cm2)\" % area\n\t\n",
+      "name": "area_figuras.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6a8724353f5a88fb480d234e66c92e44",
+  "iid": 5584124907618304,
+  "activity_revision": "1.1.0"
+}

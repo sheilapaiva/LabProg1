@@ -1,0 +1,18 @@
+{
+  "files": {
+    "custo_empregado.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nsalario_base = float(raw_input())\nquantidade_dias_trabalhados = int(raw_input())\ncusto_diario_transporte = float(raw_input())\n\nvale_transporte = (custo_diario_transporte * quantidade_dias_trabalhados)\nfgts_inss = (salario_base * 0.2)\n\nif salario_base <= 1317.07 and vale_transporte <= (salario_base * 0.06):\n\tprint \"O sal\u00e1rio base \u00e9 R$ %.2f\" % salario_base\n\tprint \"O custo mensal para o empregador \u00e9 de R$ %.2f\" % (salario_base + fgts_inss)\n\tprint \"O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f\" % (salario_base * 0.92)\n\t\nelif 1317.08 <= salario_base and vale_transporte <= (salario_base * 0.06):\n\tprint \"O sal\u00e1rio base \u00e9 R$ %.2f\" % salario_base\n\tprint \"O custo mensal para o empregador \u00e9 de R$ %.2f\" % (salario_base + fgts_inss)\n\tprint \"O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f\" % (salario_base * 0.91)\n\nelif salario_base >= 2195.13 and vale_transporte <= (salario_base * 0.06):\n\tprint \"O sal\u00e1rio base \u00e9 R$ %.2f\" % salario_base\n\tprint \"O custo mensal para o empregador \u00e9 de R$ %.2f\" % (salario_base + fgts_inss)\n\tprint \"O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f\" % (salario_base * 0.89)\n\t\nelif salario_base <= 1317.07 and vale_transporte >= (salario_base * 0.06):\n\tprint \"O sal\u00e1rio base \u00e9 R$ %.2f\" % salario_base\n\tprint \"O custo mensal para o empregador \u00e9 de R$ %.2f\" % (salario_base + fgts_inss + vale_transporte - (salario_base * 0.06))\n\tprint \"O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f\" % (salario_base - (salario_base * 0.08) - (salario_base * 0.06))\n\t\nelif 1317.08 <= salario_base <= 2195.12 and vale_transporte >= (salario_base * 0.06):\n\tprint \"O sal\u00e1rio base \u00e9 R$ %.2f\" % salario_base\n\tprint \"O custo mensal para o empregador \u00e9 de R$ %.2f\" % (salario_base + fgts_inss + vale_transporte - (salario_base * 0.06))\n\tprint \"O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f\" % (salario_base - (salario_base * 0.09) - (salario_base * 0.06))\n\t\nelse:\n\tprint \"O sal\u00e1rio base \u00e9 R$ %.2f\" % salario_base\n\tprint \"O custo mensal para o empregador \u00e9 de R$ %.2f\" % (salario_base + fgts_inss + vale_transporte - (salario_base * 0.06))\n\tprint \"O sal\u00e1rio l\u00edquido que o trabalhador ir\u00e1 receber no m\u00eas \u00e9 R$ %.2f\" % (salario_base - (salario_base * 0.11) - (salario_base * 0.06))\n",
+      "name": "custo_empregado.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 20,\n      \"vhalstead\": 351.03,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "07dbb2171e520a144d9e4a96a4571bcf",
+  "iid": 5290264822284288,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "agrupa_matriculas.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva  Matr\u00edcula: 118210186\n#Unidade: 10    Quest\u00e3o: Agrupa Matr\u00edculas\n\n\ndef meu_in(mapa, procurado):\n\tencontrou = False\n\tfor elemento in mapa:\n\t\tif elemento == procurado:\n\t\t\tmapa[elemento] += 1\n\t\t\tencontrou = True\n\t\t\tbreak\n\tif encontrou == False:\n\t\tmapa[procurado] = 1\n\n\ndef agrupa_por_periodo(turma):\n\tperiodo_ingresso = []\n\tfor elemento in turma:\n\t\tstring = \"\"\n\t\tfor digito in range(0,3):\n\t\t\tstring += elemento[digito]\n\t\tperiodo_ingresso.append(string)\n\t\n\tmapa = {}\n\tfor i in range(len(turma)):\n\t\tmeu_in(mapa, periodo_ingresso[i])\n\t\n\treturn mapa\n",
+      "name": "agrupa_matriculas.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nagrupa_por_periodo = getattr(undertest, 'agrupa_por_periodo', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        turma = [\n            '0511114', '0521137', '0611001',\n            '0611003', '0611004', '0621006',\n            '0811007', '0811009', '0811502',\n            '0811604', '0811605',\n        ]\n        assert agrupa_por_periodo(turma) == {\n            '051': 1,\n            '052': 1,\n            '061': 3,\n            '062': 1,\n            '081': 5,\n        }\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9a2f91c470ce5293af48024ffb9d6134",
+  "iid": 5850077906075648,
+  "activity_revision": "1.0.0"
+}

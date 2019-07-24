@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\naltera_vetor_por_escalar = getattr(undertest, 'altera_vetor_por_escalar', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_adicional_1(self):\n       vetor_1 = [1, 2, 3]\n       assert altera_vetor_por_escalar(vetor_1, -1) == None\n       assert vetor_1 == [-1, -2, -3]\n       assert altera_vetor_por_escalar(vetor_1, 2) == None\n       assert vetor_1 == [-2, -4, -6]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "altera_vetor.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 7    Quest\u00e3o: Altera Vetor\n\ndef altera_vetor_por_escalar(vetor, escalar):\n\tfor i in range(len(vetor)):\n\t\tvetor[i] = (vetor[i] * escalar)\n\t\n\treturn None\n",
+      "name": "altera_vetor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "63db094b8aa882f896af67916cf9dc9a",
+  "iid": 5243801396314112,
+  "activity_revision": "2.0.2"
+}

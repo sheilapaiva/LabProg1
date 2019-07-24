@@ -1,0 +1,18 @@
+{
+  "files": {
+    "melhor_ataque.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade 4 \tQuest\u00e3o: Melhor ataque\n\nquantidade_times = int(raw_input())\ntotal_gols = 0\npontos = 0\nlista_times = \"\"\n\nfor i in range(quantidade_times):\n\tnome_time = str(raw_input())\n\tquantidade_gols = int(raw_input())\n\ttotal_gols += quantidade_gols\n\t\t\n\tif quantidade_gols == pontos:\n\t\tpontos = quantidade_gols \n\t\tlista_times += nome_time + \"\\n\"\n\telif quantidade_gols >= pontos:\n\t\tpontos = quantidade_gols \n\t\tlista_times = \"\"\n\t\tlista_times += nome_time + \"\\n\"\n\t\t\nprint \"Time(s) com melhor ataque (%d gol(s)):\\n%s\" % (pontos, lista_times)\nmedia = (total_gols / (quantidade_times * 1.0))\nprint \"M\u00e9dia de gols marcados: %.1f\" % media\n",
+      "name": "melhor_ataque.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 66.61,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "06adf8d353a68892a41fce6008a8def1",
+  "iid": 5731008091521024,
+  "activity_revision": "1.1.1"
+}

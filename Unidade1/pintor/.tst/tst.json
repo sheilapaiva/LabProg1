@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pintor.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 1 \tQuest\u00e3o: Pintor\n\naltura = float(raw_input())\nlargura = float(raw_input())\n\narea_parede = (altura * largura)\nvalor_metro_quadrado = (area_parede * 20.00)\n\nprint \"R$ %.2f\" % valor_metro_quadrado\n",
+      "name": "pintor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e2f453b028a21cf54ccc48c6c83c05a8",
+  "iid": 5554180630511616,
+  "activity_revision": "2.0.1"
+}

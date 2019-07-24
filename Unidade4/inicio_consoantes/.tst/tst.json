@@ -1,0 +1,18 @@
+{
+  "files": {
+    "inicio_consoantes.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 4 \tQuest\u00e3o: \u00cdndices de caracteres\n\nn = int(raw_input())\n\ncont = 0\nfor i in range(n):\n\tpalavra = raw_input()\n\tif palavra[0] in \"bcdfghjklmnpqrstuvxywz\":\n\t\tcont += 1\n\t\nprint \"total de palavras: %d\" % n\nprint \"iniciadas por consoantes: %d (%.2f%%)\" % (cont, ((cont * 100.) / n))\n",
+      "name": "inicio_consoantes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 70.32,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "afa0ff85d7846361fd502a32ec919923",
+  "iid": 5338434021359616,
+  "activity_revision": "1.1.3"
+}

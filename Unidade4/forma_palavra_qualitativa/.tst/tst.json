@@ -1,0 +1,18 @@
+{
+  "files": {
+    "forma_palavra_qualitativa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Forma Palavra (qualitativa)\n\npalavra1 = raw_input()\npalavra2 = raw_input()\npalavra3 = raw_input()\n\npalavra_nova = \"\"\nfor i in range(len(palavra1)):\n\tposicao_palavra1 = palavra1[i]\n\tposicao_palavra2 = palavra2[i]\n\tposicao_palavra3 = palavra3[i]\n\tif posicao_palavra1 <= posicao_palavra2 < posicao_palavra3:\n\t\tpalavra_nova += posicao_palavra3\n\telif posicao_palavra2 <= posicao_palavra1 < posicao_palavra3:\n\t\tpalavra_nova += posicao_palavra3\t\n\telif posicao_palavra1 <= posicao_palavra3 < posicao_palavra2:\n\t\tpalavra_nova += posicao_palavra2\n\telif posicao_palavra3 <= posicao_palavra1 < posicao_palavra2:\n\t\tpalavra_nova += posicao_palavra2\t\n\telif posicao_palavra2 <= posicao_palavra3 < posicao_palavra1:\n\t\tpalavra_nova += posicao_palavra1\n\telif posicao_palavra3 <= posicao_palavra2 < posicao_palavra1:\n\t\tpalavra_nova += posicao_palavra1\n\telif posicao_palavra1 == posicao_palavra2 < posicao_palavra3:\n\t\tpalavra_nova += posicao_palavra3\n\telif posicao_palavra1 == posicao_palavra2 > posicao_palavra3:\n\t\tpalavra_nova += posicao_palavra1\n\telif posicao_palavra1 == posicao_palavra3 < posicao_palavra2:\n\t\tpalavra_nova += posicao_palavra2\n\telif posicao_palavra1 == posicao_palavra3 > posicao_palavra2:\n\t\tpalavra_nova += posicao_palavra1\n\telif posicao_palavra2 == posicao_palavra3 < posicao_palavra1:\n\t\tpalavra_nova += posicao_palavra1\n\telif posicao_palavra2 == posicao_palavra3 > posicao_palavra1:\n\t\tpalavra_nova += posicao_palavra2\n\telif posicao_palavra2 == posicao_palavra3 == posicao_palavra1:\n\t\tpalavra_nova += posicao_palavra1\nprint palavra_nova\n",
+      "name": "forma_palavra_qualitativa.py"
+    },
+    "solucao.py": {
+      "category": "public",
+      "data": "alfabeto = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n',\n'o','p','q','r','s','t','u','v','w','x','y','z']\n\npalavra1 = raw_input()\npalavra2 = raw_input()\npalavra3 = raw_input()\npalavraFormada = ''\nauxiliar = -1\nlistaChar =[]\n\nfor i in range(len(palavra1)):\n    for l in range(len(alfabeto)):\n        if palavra1[i] == alfabeto[l]:\n            if auxiliar < l:\n                auxiliar = l\n                \n        if palavra2[i] == alfabeto[l]:\n            if auxiliar < l:\n                auxiliar = l\n                \n        if palavra3[i] == alfabeto[l]:\n            if auxiliar < l:\n                auxiliar = l\n        \n    listaChar.append(auxiliar)\n    auxiliar = 0\n        \nfor indice in listaChar:\n    palavraFormada += alfabeto[indice]\n    \nprint palavraFormada\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "85e810f333826bc4e65f5c0d93c93305",
+  "iid": 5771739782971392,
+  "activity_revision": "1.0.0"
+}

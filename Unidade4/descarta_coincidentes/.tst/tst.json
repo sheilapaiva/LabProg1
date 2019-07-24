@@ -1,0 +1,18 @@
+{
+  "files": {
+    "descarta_coincidentes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Descarta coincidentes\n\nsequencia_numeros = int(raw_input())\n\nmsg_descartados = \"\"\nmsg_aceitos = \"\"\ncont_descartados = 0\ncont_aceitos = 0\nfor i in range(sequencia_numeros):\n\tnumero = raw_input()\n\tposicao = 0\n\tcondicao_parada = 0\n\t\n\tfor j in range(len(numero)):\n\t\tposicao = int(numero[j])\n\t\tif posicao == j and condicao_parada == 0:\n\t\t\tcont_descartados += 1\n\t\t\tmsg_descartados += \"\\n\" + numero\n\t\t\tcondicao_parada = 1\n\tif condicao_parada == 0:\n\t\tcont_aceitos += 1\n\t\tmsg_aceitos += \"\\n\" + numero\n\t\nprint \"---\"\nprint \"%d aceito(s)%s\" % (cont_aceitos, msg_aceitos)\nprint \"%d descartado(s)%s\" % (cont_descartados, msg_descartados)\n",
+      "name": "descarta_coincidentes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bb00646387211bf2a767fbc1b666f488",
+  "iid": 5668363946688512,
+  "activity_revision": "1.0.1"
+}

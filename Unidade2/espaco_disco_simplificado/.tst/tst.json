@@ -1,0 +1,14 @@
+{
+  "files": {
+    "espaco_disco_simplificado.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnome1 = raw_input()\nespaco1 = float(raw_input())\nnome2 = raw_input()\nespaco2 = float(raw_input())\nnome3 = raw_input()\nespaco3 = float(raw_input())\n\nespaco_utilizado1 = float((espaco1 / 1024) / 1024)\nespaco_utilizado2 = float((espaco2 / 1024) / 1024)\nespaco_utilizado3 = float((espaco3 / 1024) / 1024)\n\nprint \"SPLab - Espa\u00e7o utilizado pelos usu\u00e1rios\"\nprint \"---------------------------------------------\"\nprint \"Nr., Usu\u00e1rio, Espa\u00e7o Utilizado\"\nprint \"\"\n\nprint \"1, %s, %.2f MB\" % (nome1, espaco_utilizado1)\nprint \"2, %s, %.2f MB\" % (nome2, espaco_utilizado2)\nprint \"3, %s, %.2f MB\" % (nome3, espaco_utilizado3)\n\nespaco_total = float(espaco_utilizado1 + espaco_utilizado2 + espaco_utilizado3)\nespaco_medio = float(espaco_total / 3)\n\nprint \"\"\nprint \"Espa\u00e7o total ocupado: %.2f MB\" % espaco_total\nprint \"Espa\u00e7o m\u00e9dio ocupado: %.2f MB\" % espaco_medio\n",
+      "name": "espaco_disco_simplificado.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "491a8920e1c8d268f72e27bd9a74dc41",
+  "iid": 6002172596584448,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncoluna = getattr(undertest, 'coluna', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        M = [[1,1,1,1],[2,2,2,2],[3,3,3,3]]\n        assert coluna(M,0) == [1,2,3]\n        assert coluna(M,1) == [1,2,3]\n        assert coluna(M,2) == [1,2,3]\n        assert coluna(M,3) == [1,2,3]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "coluna.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 9    Quest\u00e3o: Coluna\n\n\ndef coluna(matriz, c):\n\tvalores_coluna = []\n\tfor j in range(len(matriz[0])):\n\t\tfor i in range(len(matriz)):\n\t\t\tif  j == c:\n\t\t\t\tvalores_coluna.append(matriz[i][j])\n\treturn valores_coluna\n",
+      "name": "coluna.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "df89541c2e2a6f1652c8f2fd66752fa7",
+  "iid": 6099715498180608,
+  "activity_revision": "1.0.0"
+}

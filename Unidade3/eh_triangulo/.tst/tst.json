@@ -1,0 +1,18 @@
+{
+  "files": {
+    "eh_triangulo.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\na = int(raw_input())\nb = int(raw_input())\nc = int(raw_input())\n\nperimetro = (a + b + c)\n\nif ((b - c) < a < (b + c)) or ((a - c) < b < (a + c)) or ((a - b) < c < (a + b)):\n\tprint \"triangulo valido. %d\" % perimetro\n\t\nelse:\n\tprint \"triangulo invalido.\"\n",
+      "name": "eh_triangulo.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 103.61,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "72395ca287b0de2363a6ab9dd3c87fd6",
+  "iid": 5788975050522624,
+  "activity_revision": "1.1.1"
+}

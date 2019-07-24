@@ -1,0 +1,14 @@
+{
+  "files": {
+    "area_perimetro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# \u00c1rea e per\u00edmetro de um C\u00edrculo\n\nimport math\n\ndiametro = float(raw_input())\n\nraio = float(diametro / 2)\narea = float(math.pi * (raio ** 2))\nperimetro = float(2 * math.pi * raio)\n\nprint \"A: %.5f\" % area\nprint \"P: %.5f\" % perimetro\n",
+      "name": "area_perimetro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f26a72f5345732d9feff85b656a713c8",
+  "iid": 5795944775811072,
+  "activity_revision": "1.1.1"
+}

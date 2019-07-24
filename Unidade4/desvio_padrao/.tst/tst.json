@@ -1,0 +1,14 @@
+{
+  "files": {
+    "desvio_padrao.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Desvio Padr\u00e3o\n\nimport math\n\nsequencia1 = list(raw_input().split(\" \"))\ntamanho_sequencia1 = len(sequencia1)\nsequencia2 = list(raw_input().split(\" \"))\ntamanho_sequencia2 = len(sequencia2)\n\n#Desvio padr\u00e3o sequ\u00eancia 1\nmedia_sequencia1 = 0\nfor i in range(len(sequencia1)):\n\t media_sequencia1 += (float(sequencia1[i]) / tamanho_sequencia1)\ndiferenca_sequencia1 = 0\nfor j in range(len(sequencia1)):\n\tdiferenca_sequencia1 += ((float(sequencia1[j]) - media_sequencia1) ** 2)\ndesvio_sequencia1 = math.sqrt(diferenca_sequencia1 / (tamanho_sequencia1 - 1))\n\n#Desvio padr\u00e3o sequ\u00eancia 2\nmedia_sequencia2 = 0\nfor i in range(len(sequencia2)):\n\t media_sequencia2 += (float(sequencia2[i]) / tamanho_sequencia2)\ndiferenca_sequencia2 = 0\nfor j in range(len(sequencia2)):\n\tdiferenca_sequencia2 += ((float(sequencia2[j]) - media_sequencia2) ** 2)\ndesvio_sequencia2 = math.sqrt(diferenca_sequencia2 / (tamanho_sequencia2 - 1))\n\n#Compara\u00e7\u00e3o dos desvios padr\u00e3o\nif desvio_sequencia1 > desvio_sequencia2:\n\tprint \"A sequ\u00eancia 1 possui o maior desvio padr\u00e3o (%.2f).\" % desvio_sequencia1\nelif desvio_sequencia2 > desvio_sequencia1:\n\tprint \"A sequ\u00eancia 2 possui o maior desvio padr\u00e3o (%.2f).\" % desvio_sequencia2\nelse:\n\tprint \"As sequ\u00eancias possuem o mesmo desvio padr\u00e3o (%.2f).\" % desvio_sequencia1\n",
+      "name": "desvio_padrao.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "77ed50bfe5cf607dd935b9a0de0ae124",
+  "iid": 5253573990416384,
+  "activity_revision": "1.0.3"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "defensivos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nproduto = str(raw_input())\narea = float(raw_input())\n\nquantidade_fungicida1 = ((area * 1) / 50)\nquantidade_fungicida2 = (((area * 1) / 50) + 1)\nquantidade_inseticida1 = ((area * 2.5) / 30)\nquantidade_inseticida2 = (((area * 2.5) / 30) + 1)\nquantidade_herbicida1 = ((area * 0.3) / 1)\nquantidade_herbicida2 = (((area * 0.3) / 1) + 1)\nvalor_fungicida = ((int(quantidade_fungicida1) + 1) * 320)\nvalor_inseticida = ((int(quantidade_inseticida1) + 1) * 400)\nvalor_herbicida = ((int(quantidade_herbicida1) + 1) * 100)\n\nif produto == \"Fungicida\" or produto == \"fungicida\":\n\tif quantidade_fungicida1 <= 0 or quantidade_fungicida1 % 1 != 0:\n\t\tprint \"%d Fungicida(s). %.2f reais.\" % (quantidade_fungicida2, valor_fungicida)\n\telse:\n\t\tprint \"%d Fungicida(s). %.2f reais.\" % (quantidade_fungicida1, (valor_fungicida - 320))\n\nif produto == \"Inseticida\" or produto == \"inseticida\":\n\tif quantidade_inseticida1 <= 0 or quantidade_inseticida1 % 1 != 0:\n\t\tprint \"%d Inseticida(s). %.2f reais.\" % (quantidade_inseticida2, valor_inseticida)\n\telse:\n\t\tprint \"%d Inseticida(s). %.2f reais.\" % (quantidade_inseticida1, valor_inseticida - 400)\n\nif produto == \"Herbicida\" or produto == \"herbicida\":\n\tif quantidade_herbicida1 <= 0 or quantidade_herbicida1 % 1 != 0: \n\t\tprint \"%d Herbicida(s). %.2f reais.\" % (quantidade_herbicida2, valor_herbicida)\n\telse:\n\t\tprint \"%d Herbicida(s). %.2f reais.\" % (quantidade_herbicida1, valor_herbicida - 100)\n",
+      "name": "defensivos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "10e62fdd8c903e3e1df4b89b34cb9d46",
+  "iid": 6406078031986688,
+  "activity_revision": "1.1.1"
+}

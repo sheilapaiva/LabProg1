@@ -1,0 +1,19 @@
+{
+  "files": {
+    "conta_alertas.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: Conta Alertas\n\ndef conta_alertas_acude(medicoes):\n\tcont = 0\n\tfor i in range(len(medicoes)):\n\t\tif medicoes[i] < 17 and abs(medicoes[i] - medicoes[i - 1]) < 10:\n\t\t\tcont += 1\n\treturn cont\n",
+      "name": "conta_alertas.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nconta_alertas_acude = getattr(undertest, 'conta_alertas_acude', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        medicoes = [50,50,50,23,21,17,15,60,65,15,15]\n        assert conta_alertas_acude(medicoes) == 2\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1863fc5f2259254c5181f596b52c473f",
+  "iid": 5279966497341440,
+  "activity_revision": "1.0.1"
+}

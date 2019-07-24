@@ -1,0 +1,18 @@
+{
+  "files": {
+    "roleta.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnumero_aposta = int(raw_input())\ncor_aposta = str(raw_input())\nnumero_sorteado = int(raw_input())\ncor_sorteada = str(raw_input())\n\nif numero_aposta == numero_sorteado and cor_aposta == cor_sorteada:\n\tprint \"150\"\n\nelif numero_aposta == numero_sorteado and cor_aposta != cor_sorteada:\n\tprint \"100\"\n\t\nelif numero_aposta != numero_sorteado and cor_aposta == cor_sorteada:\n\tif numero_sorteado > numero_aposta:\n\t\tprint \"80\"\n\tif numero_sorteado < numero_aposta:\n\t\tprint \"100\"\t\n\nelse:\n\tprint \"0\"\n\n",
+      "name": "roleta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 17,\n      \"vhalstead\": 69.76,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ec37ad8d80c7ab14b15cf3070b5aa9ab",
+  "iid": 4937506810232832,
+  "activity_revision": "1.0.1"
+}

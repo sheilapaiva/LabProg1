@@ -1,0 +1,14 @@
+{
+  "files": {
+    "controle-agua.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nimport math\n\nvelocidade_de_vazao = float(raw_input())\ndiametro = float(raw_input())\ntempo = int(raw_input())\n\n#velocidade_de_vazao = 0.3\nseccao = (math.pi * diametro**2) / 4\nvazao = velocidade_de_vazao * seccao * 1000            #convertendo para litros\n#tempo = 1800                                           #em segundos\nquantidade_de_agua = tempo * vazao\nprint \"Quantidade de \u00e1gua =\", quantidade_de_agua, \"litros.\"\n",
+      "name": "controle-agua.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7ca482804c035dcc079ad45b02da57a1",
+  "iid": 4947306046554112,
+  "activity_revision": "1.0.1"
+}

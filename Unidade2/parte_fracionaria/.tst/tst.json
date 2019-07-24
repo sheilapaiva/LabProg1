@@ -1,0 +1,14 @@
+{
+  "files": {
+    "parte_fracionaria.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum = float(raw_input())\n\nnum = (num % 1)\n\nprint num\n",
+      "name": "parte_fracionaria.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ebeed693db25a0d04f80d92502967e45",
+  "iid": 5951402559930368,
+  "activity_revision": "1.1.0"
+}

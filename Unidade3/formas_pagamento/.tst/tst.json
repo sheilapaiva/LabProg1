@@ -1,0 +1,14 @@
+{
+  "files": {
+    "formas_pagamento.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\narea_construida = float(raw_input())\nvalor_metro = float(raw_input())\nopcao_pagamento = str(raw_input())\n\niptu = (area_construida * valor_metro)\n\nif opcao_pagamento == \"vista\":\n\tiptu = (iptu - (iptu * 0.2))\n\tprint \"Total: R$ %.2f\" % iptu\n\t\nif opcao_pagamento == \"2x\":\n\tiptu = (iptu - (iptu * 0.1))\n\tparcelas = (iptu / 2.)\n\tprint \"Total: R$ %.2f. Parcelas: R$ %.2f\" % (iptu, parcelas)\n\t\nif opcao_pagamento == \"3x\":\n\tiptu = (iptu - (iptu * 0.05))\n\tparcelas = (iptu / 3.)\n\tprint \"Total: R$ %.2f. Parcelas: R$ %.2f\" % (iptu, parcelas)\n",
+      "name": "formas_pagamento.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "52d95282e31ec033e9f6739edbb07cbf",
+  "iid": 5219352127209472,
+  "activity_revision": "2.0.0"
+}

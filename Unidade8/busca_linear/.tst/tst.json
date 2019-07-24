@@ -1,0 +1,19 @@
+{
+  "files": {
+    "busca_linear.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Busca Linear\n\ndef busca(seq, valor):\n\tposicao = -1\n\tfor i in range(len(seq)):\n\t\tif seq[i] == valor:\n\t\t\tposicao = i\n\t\t\tbreak\n\t\t\t\t\n\treturn posicao\n",
+      "name": "busca_linear.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbusca = getattr(undertest, 'busca', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       seq = [10, 7, 8, 6, 2, 31, 12]\n       assert busca(seq, 8) == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7e85aa3b45f1f8a01aa397210c757429",
+  "iid": 5865644356534272,
+  "activity_revision": "1.0.0"
+}

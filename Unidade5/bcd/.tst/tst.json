@@ -1,0 +1,18 @@
+{
+  "files": {
+    "bcd.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 5 \tQuest\u00e3o: BCD\n\nparte1, lista = \"\", []\nwhile True:\n\tnumero = raw_input()\n\tif numero == \"fim\":\n\t\tbreak\n\tif len(numero) < 8:\n\t\tlista.append(\"Tente novamente.\")\n\telse:\n\t\tparte1 = numero[0] + numero[1] + numero[2] + numero[3]\n\t\tparte2 = numero[4] + numero[5] + numero[6] + numero[7]\n\t\tif int(parte1, 2) < 10 and int(parte2, 2) < 10:\n\t\t\tlista.append(str(int(parte1, 2)) + str(int(parte2, 2)))\n\t\telse:\n\t\t\tlista.append(\"BCD inv\u00e1lido.\")\n\nfor i in range(len(lista)):\n\tprint lista[i]\n",
+      "name": "bcd.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 72.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2e5d9db5b936d3993c1fc20ed3e46b54",
+  "iid": 5891227517976576,
+  "activity_revision": "1.0.3"
+}

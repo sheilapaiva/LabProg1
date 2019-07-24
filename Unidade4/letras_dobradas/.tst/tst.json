@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 41.51,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "letras_dobradas.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 4 \tQuest\u00e3o: Letras Dobradas\n\nn = int(raw_input())\n\nletras_dobradas, sem_letras_dobradas = [], []\ncont_dobradas, cont_sem_dobradas = 0, 0\nfor i in range(n):\n\tpalavra = raw_input()\n\tpalavra_auxiliar = \"\"\n\tfor j in range(len(palavra)):\n\t\tif palavra[j] == palavra[j - 1]:\n\t\t\tpalavra_auxiliar = palavra\n\tif palavra_auxiliar != \"\":\n\t\tletras_dobradas.append(palavra)\n\t\tcont_dobradas += 1\n\telse:\n\t\tsem_letras_dobradas.append(palavra)\n\t\tcont_sem_dobradas += 1\n\nprint \"%d palavra(s) com letras dobradas:\" % (cont_dobradas)\nfor i in range(len(letras_dobradas)):\n\tprint letras_dobradas[i]\nprint \"---\"\nprint \"%d palavra(s) sem letras dobradas:\" % (cont_sem_dobradas)\nfor i in range(len(sem_letras_dobradas)):\n\tprint sem_letras_dobradas[i]\n\n",
+      "name": "letras_dobradas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "92dfe5afe60a0eac711474aa8991778e",
+  "iid": 4941532603875328,
+  "activity_revision": "1.1.1"
+}

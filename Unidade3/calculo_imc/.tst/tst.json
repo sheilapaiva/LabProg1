@@ -1,0 +1,14 @@
+{
+  "files": {
+    "calculo_imc.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\npeso = float(raw_input())\naltura = float(raw_input())\n\nimc = float(peso / altura ** 2)\n\nif imc < 16:\n\tprint \"IMC: %.1f - Magreza grave\" % imc\nif 16 <= imc < 17:\t\n\tprint \"IMC: %.1f - Magreza moderada\" % imc\nif 17 <= imc < 18.5:\n\tprint \"IMC: %.1f - Magreza leve\" % imc\nif 18.5 <= imc < 25:\n\tprint \"IMC: %.1f - Saud\u00e1vel\" % imc\nif 25 <= imc < 30:\t\n\tprint \"IMC: %.1f - Sobrepeso\" % imc\nif 30 <= imc < 35:\t\n\tprint \"IMC: %.1f - Obesidade Grau I\" % imc\nif 35 <= imc < 40:\t\n\tprint \"IMC: %.1f - Obesidade Grau II (severa)\" % imc\nif imc >= 40:\n\tprint \"IMC: %.1f - Obesidade Grau III (m\u00f3rbida)\" % imc\n",
+      "name": "calculo_imc.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bc10c4f1cfe48601b4359513940e2b8b",
+  "iid": 5882556750757888,
+  "activity_revision": "1.0.7"
+}

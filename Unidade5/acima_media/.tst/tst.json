@@ -1,0 +1,14 @@
+{
+  "files": {
+    "acima_media.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Acima da m\u00e9dia\n\nmedia_mensal = float(raw_input()) \n\nlista = []\nwhile True:\n    linha = raw_input() \n    dados = linha.split()\n    \n    media_diaria = 0.0 \n    for i in range(len(dados)):\n        if dados[i] == \"fim\": \n\t\t\tbreak \n        dados[i] = int(dados[i])\n        media_diaria += dados[i]\n    \n    media_diaria /= len(dados)\n    if media_diaria * 2 < media_mensal:\n        break\n    elif media_diaria > media_mensal:\n       lista.append(linha)\n\nfor k in range(len(lista)): \n    print(lista[k])\n",
+      "name": "acima_media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e3876d5ce7bfe50a2289fb53eb863b73",
+  "iid": 5865147100823552,
+  "activity_revision": "1.0.1"
+}

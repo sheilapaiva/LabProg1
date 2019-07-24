@@ -1,0 +1,14 @@
+{
+  "files": {
+    "area-circulo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nimport math\n\nraio = float(raw_input())\n\narea = (math.pi*(raio**2))\n\nprint '%.2f' % (area)\n",
+      "name": "area-circulo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "226a4f4fbc4bd524beec13687928eb24",
+  "iid": 6271450335936512,
+  "activity_revision": "1.1.3"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "conta_inversa.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Conta Inversa\n\npalavra = raw_input()\npalavra_inversa = palavra[::-1]\n\ncont = 0\nfor i in range(len(palavra)):\n\tletra_palavra = palavra[i]\n\tletra_palavra_inversa = palavra_inversa[i]\n\t\n\tif letra_palavra == letra_palavra_inversa:\n\t\tcont += 1\n\nprint \"A palavra %s cont\u00e9m %d caractere(s) coincidente(s) com a sua inversa.\" % (palavra, cont)\n",
+      "name": "conta_inversa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "463d7225833a449c6e07cadcaaeb31ed",
+  "iid": 5859897375719424,
+  "activity_revision": "1.1.1"
+}

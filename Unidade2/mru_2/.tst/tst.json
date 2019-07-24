@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mru_2.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ns0 = float(raw_input())\nvelocidade = float(raw_input())\ntempo = float(raw_input())\n\ns = float(s0 + (velocidade * tempo))\n\nprint \"%.2f\" % s\n",
+      "name": "mru_2.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "661b249307d190a71e22254a4fc62a40",
+  "iid": 6436682358325248,
+  "activity_revision": "1.1.1"
+}

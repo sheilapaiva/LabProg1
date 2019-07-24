@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\n# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nconta_votos = getattr(undertest, 'conta_votos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        votacao = []\n        votacao.append('uma,543,joao,PPPP,sim')\n        assert conta_votos(votacao, 543) == [1,0]\n\n    def test_exemplo(self):\n        votacao = []\n        votacao.append('uma,543,joao,PPPP,sim')\n        votacao.append('uma,543,marina,PPPP,nao')\n        votacao.append('uma,5,joao,PPPP,sim')\n        votacao.append('uma,543,julio,P,nao')\n        votacao.append('uma,543,carlos,PBBBB,sim')\n        votacao.append('uma,543,juliana,PP,sim')\n        votacao.append('uma,99,joao,PPPP,sim')\n\n        assert conta_votos(votacao, 543) == [3,2]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "analytics_votacao.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: Analytics Vota\u00e7\u00e3o\n\ndef conta_votos(votacoes,id_votacao):\n\tlista, cont_sim, cont_nao = [], 0, 0\n\tfor i in range(len(votacoes)):\n\t\tlista = votacoes[i].split(\",\")\n\t\tif int(lista[1]) == id_votacao:\n\t\t\tif lista[4] == \"sim\":\n\t\t\t\tcont_sim += 1\n\t\t\telif lista[4] == \"nao\":\n\t\t\t\tcont_nao += 1\n\treturn [cont_sim, cont_nao]\n",
+      "name": "analytics_votacao.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b6279e5d21e6fada8d111adeaf6071a1",
+  "iid": 6431511653908480,
+  "activity_revision": "2.0.1"
+}

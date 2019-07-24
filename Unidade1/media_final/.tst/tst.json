@@ -1,0 +1,14 @@
+{
+  "files": {
+    "media-final.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nmedia_parcial = float(raw_input())\nprova_final = float(raw_input())\n\nmedia_final = (((media_parcial * 60) + (prova_final * 40)) / (60 + 40))\n\nprint \"M\u00e9dia final: %.1f\" % media_final\n",
+      "name": "media-final.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "89d8f2096808d2feac6870f8cccb1509",
+  "iid": 6349968646340608,
+  "activity_revision": "1.0.1"
+}

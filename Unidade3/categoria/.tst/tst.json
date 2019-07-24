@@ -1,0 +1,14 @@
+{
+  "files": {
+    "categoria.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnome = str(raw_input())\nidade = int(raw_input())\n\nif idade <= 4:\n\tprint \"%s, %d anos, N\u00e3o pode competir.\" % (nome, idade)\nif idade >= 5 and idade <= 7:\n\tprint \"%s, %d anos, Infantil A.\" % (nome, idade)\nif idade >= 8 and idade <= 10:\n\tprint \"%s, %d anos, Infantil B.\" % (nome, idade)\nif idade >= 11 and idade <= 13:\n\tprint \"%s, %d anos, Juvenil A.\" % (nome, idade)\nif idade >= 14 and idade <= 17:\n\tprint \"%s, %d anos, Juvenil B.\" % (nome, idade)\nif idade > 17:\n\tprint \"%s, %d anos, Senior.\" % (nome, idade)\n",
+      "name": "categoria.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fa48136b62a013eb2c283279bcf150b3",
+  "iid": 5301011333775360,
+  "activity_revision": "1.0.1"
+}

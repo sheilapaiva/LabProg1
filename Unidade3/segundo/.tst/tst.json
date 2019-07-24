@@ -1,0 +1,18 @@
+{
+  "files": {
+    "segundo.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nmsg = \"\"\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\n\nmsg += str(num1) + \", \" + str(num2) + \", \"\n\nif num2 > num1:\n\tnum2, num1 = num1, num2\n\nnum3 = int(raw_input())\n\nmsg += str(num3) + \" e \"\n\nif num3 > num2:\n\tnum3, num2 = num2, num3\n\tif num2 > num1:\n\t\tnum2, num1 = num1, num2\n\nnum4 = int(raw_input())\n\nmsg += str(num4)\n\nif num4 > num3:\n\tnum4, num3 = num3, num4\n\tif num3 > num2:\n\t\tnum3, num2 = num2, num3\n\tif num2 > num1:\n\t\tnum2, num1 = num1, num2\n\t\t\nprint \"Considerando os n\u00fameros \" + msg\nprint \"O segundo menor n\u00famero \u00e9 %d\" % num3\nprint \"O segundo maior n\u00famero \u00e9 %d\" % num2\n",
+      "name": "segundo.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 10,\n      \"pep8\": 0,\n      \"lloc\": 37,\n      \"vhalstead\": 147.15,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "35a9cfd0e71763b1365d0c99202d9261",
+  "iid": 6279218757369856,
+  "activity_revision": "1.0.1"
+}

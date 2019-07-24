@@ -1,0 +1,14 @@
+{
+  "files": {
+    "aplicacao_polinomios.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Aplica\u00e7\u00e3o Polin\u00f4mios\n\ndef calcula_polinomio(lista, x):\n\tresultado = 0\n\tfor i in range(len(lista) -1, 0, -1):\n\t\tif i != 0:\n\t\t\tresultado += int(lista[i]) * (int(x[0]) ** (i -1))\n\t\telse:\n\t\t\tresultado += int(lista[i])\n\tprint resultado\n\treturn resultado\n\t\n\nwhile True:\n\tsequencia = raw_input().split()\n\tif sequencia[0] == \"fim\":\n\t\tbreak\n\telif sequencia[0] == \"p:\":\n\t\tpolinomio = sequencia\n\t\tprint \"novo polinomio\"\n\telif len(sequencia) == 1:\n\t\tcalcula_polinomio(polinomio, sequencia)\n",
+      "name": "aplicacao_polinomios.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a861c31995d4c22a32e24bc34d6d2c04",
+  "iid": 5245206802726912,
+  "activity_revision": "1.0.1"
+}

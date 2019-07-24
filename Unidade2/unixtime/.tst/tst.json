@@ -1,0 +1,14 @@
+{
+  "files": {
+    "unixtime.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nqtd_segundos = float(raw_input())\n\ndias = float((qtd_segundos / 1440) / 60)\n\nprint \"%d\" % int(dias)\n",
+      "name": "unixtime.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c1f0b8e6e48e02e7014aa0fd7735acb6",
+  "iid": 6631027212550144,
+  "activity_revision": "1.1.0"
+}

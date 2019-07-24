@@ -1,0 +1,18 @@
+{
+  "files": {
+    "pedagio_qualitativa.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nveiculo = str(raw_input())\n\nif veiculo == \"Autom\u00f3vel utilit\u00e1rio\":\n\t print \"Valor a pagar: R$ 11.40.\"\n\t \nelif veiculo == \"\u00d4nibus\":\n\teixos = int(raw_input())\n\tvalor = (eixos * 11.4)\n\tprint \"Valor a pagar: R$ %.2f.\" % valor\n\t\nelif veiculo == \"Caminh\u00e3o\":\n\teixos = int(raw_input())\n\tvalor = (eixos * 9.6)\n\tprint \"Valor a pagar: R$ %.2f.\" % valor\n\t\nelif veiculo == \"Motocicleta\":\n\tprint \"Valor a pagar: R$ 5.70.\"\n\t\nelse:\n\tprint \"Ve\u00edculo n\u00e3o cadastrado.\"\n",
+      "name": "pedagio_qualitativa.py"
+    },
+    "solucao.py": {
+      "category": "public",
+      "data": "# coding: utf-8\n\nv = raw_input()\n\nif v == \"Autom\u00f3vel utilit\u00e1rio\":\n\tp = 11.40\n\tprint \"Valor a pagar: R$ %.2f.\" % p\nelif v == \"\u00d4nibus\":\n\teixos = int(raw_input())\n\tp = eixos * 11.40\n\tprint \"Valor a pagar: R$ %.2f.\" % p\nelif v == \"Caminh\u00e3o\":\n\teixos = int(raw_input())\n\tp = eixos * 9.60\n\tprint \"Valor a pagar: R$ %.2f.\" % p\nelif v == \"Motocicleta\":\n\tp = 5.70\n\tprint \"Valor a pagar: R$ %.2f.\" % p\nelse:\n\tprint \"Ve\u00edculo n\u00e3o cadastrado.\"\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6de4f7e388e675228b21380a4619d597",
+  "iid": 4984461036879872,
+  "activity_revision": "1.0.0"
+}

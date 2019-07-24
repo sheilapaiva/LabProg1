@@ -1,0 +1,14 @@
+{
+  "files": {
+    "roleta_360.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum = int(raw_input())\n\nif num > (360 * 5):\n\tnum = num - (360 * 5)\n\t\nif num > (360 * 4):\n\tnum = num - (360 * 4)\n\nif num > (360 * 3):\n\tnum = num - (360 * 3)\n\nif num > (360 * 2):\n\tnum = num - (360 * 2)\n\nif num > 360:\n\tnum = num - 360\n\t\nif 0 < num < 90:\n\tprint \"Quadrante 1\"\n\nelif 90 < num < 180:\n\tprint \"Quadrante 2\"\n\nelif 180 < num < 270:\n\tprint \"Quadrante 3\"\n\t\nelif 270 < num < 360:\n\tprint \"Quadrante 4\"\n\t\nelif num == 0 or num == 90 or num == 180 or num == 270 or num == 360:\n\tprint \"Sobre eixos\"\n",
+      "name": "roleta_360.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "50686de99067e9233eb3990e8635bfbf",
+  "iid": 6659282862866432,
+  "activity_revision": "1.0.2"
+}

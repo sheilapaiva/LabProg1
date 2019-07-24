@@ -1,0 +1,14 @@
+{
+  "files": {
+    "arvore_natal.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\naltura = int(raw_input())\nnumero_o = 1\nnumero_espacos = 0 \n\nfor arvore in range(altura):\n\tprint \" \" * (numero_espacos + (altura -1)) + numero_o * \"o\"\n\tnumero_o +=2\n\tnumero_espacos -= 1\n\nprint (altura - 1) * \" \" + \"o\"\n",
+      "name": "arvore_natal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "dae01aaeff3802312dd5715e77348fb0",
+  "iid": 5181539235135488,
+  "activity_revision": "1.0.0"
+}

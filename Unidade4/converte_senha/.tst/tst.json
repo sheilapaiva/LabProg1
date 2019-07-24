@@ -1,0 +1,18 @@
+{
+  "files": {
+    "converte_senha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Converte Senha\n\nsenha = raw_input()\nlista_senha = list(senha)\n\ncont = 0\nfor i in range(len(senha)):\n\tif i > 0:\n\t\tif lista_senha[i] == \"a\" or lista_senha[i] == \"A\":\n\t\t\tlista_senha[i] = \"4\"\n\t\t\tcont += 1\n\t\telif lista_senha[i] == \"e\" or lista_senha[i] == \"E\":\n\t\t\tlista_senha[i] = \"3\"\n\t\t\tcont += 1\n\t\telif lista_senha[i] == \"i\" or lista_senha[i] == \"I\":\n\t\t\tlista_senha[i] = \"1\"\n\t\t\tcont += 1\n\t\telif lista_senha[i] == \"o\" or lista_senha[i] == \"O\":\n\t\t\tlista_senha[i] = \"0\"\n\t\t\tcont += 1\n\nnova_senha = \"\"\nfor i in range(len(senha)):\n\tnova_senha += lista_senha[i] \n\nprint \"%s (%d troca(s))\" % (nova_senha, cont)\n",
+      "name": "converte_senha.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 230.75,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "913d56d68f26cd89a2d27faec40e9529",
+  "iid": 5012248099553280,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dez_ou_soma_dez.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\n\nif (num1 == 10) or (num2 == 10) or (num1 + num2 == 10):\n\tprint \"SIM\"\n\t\nelse:\n\tprint \"NAO\"\n",
+      "name": "dez_ou_soma_dez.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 53.15,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0e7cac4237bf19bd5c39f9feaf32b65f",
+  "iid": 5047655910604800,
+  "activity_revision": "1.0.2"
+}

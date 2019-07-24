@@ -1,0 +1,14 @@
+{
+  "files": {
+    "reajuste_salario_minimo.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nvalor_atual = float(raw_input(\"Valor atual? \"))\nnovo_valor = float(raw_input(\"Novo valor? \"))\n\naumento = (novo_valor - valor_atual)\npercentual = ((aumento * 100) / valor_atual)\n\nprint \"Reajuste de %.1f%%\" % percentual\n",
+      "name": "reajuste_salario_minimo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "57c34d05515f7b9263355b0ff5b096ff",
+  "iid": 5517346756100096,
+  "activity_revision": "1.1.0"
+}

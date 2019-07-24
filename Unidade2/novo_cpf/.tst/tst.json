@@ -1,0 +1,14 @@
+{
+  "files": {
+    "novo_cpf.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nparte1 = int(raw_input())\nparte2 = int(raw_input())\nparte3 = int(raw_input())\n\na = (parte3 / 100)\nb = ((parte3 / 10) % 10)\nc = (parte3 % 10)\nparte4 = (a + b + c)\n\nprint \"%03.d.%03.d.%03.d-%02.d\" % (parte1, parte2, parte3, parte4)\n",
+      "name": "novo_cpf.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "71aa83e2243e0685af382003015051fc",
+  "iid": 4585307043266560,
+  "activity_revision": "1.0.0"
+}

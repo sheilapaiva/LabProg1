@@ -1,0 +1,18 @@
+{
+  "files": {
+    "gratificacao_natalina.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ncodigo = int(raw_input())\n\nif codigo == 1:\n\tprint \"Dever\u00e1 receber em dezembro R$ 25000.00.\"\n\t\nif codigo == 2:\n\tprint \"Dever\u00e1 receber em dezembro R$ 15000.00.\"\n\t\nif codigo == 3:\n\tfaltas = int(raw_input())\n\tif faltas >= 1:\n\t\tgratificacao = ((235 - faltas) * 2.)\n\t\tsalario = (8000 + gratificacao)\n\t\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao\n\t\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\n\telse:\n\t\tgratificacao = 500.\n\t\tsalario = (8000 + gratificacao)\n\t\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao\n\t\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\n\nif codigo == 4:\n\tfaltas = int(raw_input())\n\tif faltas >= 1:\n\t\tgratificacao = ((235 - faltas) * 1.)\n\t\tsalario = (5000 + gratificacao)\n\t\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao\n\t\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\n\telse:\n\t\tgratificacao = 300.\n\t\tsalario = (5000 + gratificacao)\n\t\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao\n\t\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\n\t\nif codigo == 5:\n\tfaltas = int(raw_input())\n\tif faltas >= 1:\n\t\tgratificacao = ((235 - faltas) * 0.7)\n\t\tsalario = (2800 + gratificacao)\n\t\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao\n\t\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\n\telse:\n\t\tgratificacao = 200.\n\t\tsalario = (2800 + gratificacao)\n\t\tprint \"Valor da gratifica\u00e7\u00e3o R$ %.2f.\" % gratificacao\n\t\tprint \"Dever\u00e1 receber em dezembro R$ %.2f.\" % salario\n",
+      "name": "gratificacao_natalina.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 25,\n      \"vhalstead\": 129.66,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "187683fe175aad94b1491bc2155f3355",
+  "iid": 5865528547606528,
+  "activity_revision": "1.0.2"
+}

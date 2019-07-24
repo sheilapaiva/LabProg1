@@ -1,0 +1,14 @@
+{
+  "files": {
+    "calcula_de_medias.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Calculadora de M\u00e9dias\n\n\ndef media_aritmetica(lista_valores):\n\tmedia = 0.0\n\tfor i in range(len(lista_valores)):\n\t\tmedia += float(lista_valores[i]) / len(lista_valores)\n\tprint \"M\u00e9dia Aritm\u00e9tica: %.4f\" % media\n\treturn media\n\t\n\t\ndef media_geometrica(lista_valores):\n\tmedia = 1.0\n\tfor i in range(len(lista_valores)):\n\t\tmedia *= float(lista_valores[i]) ** float(1.0/len(lista_valores))\n\tprint \"M\u00e9dia Geom\u00e9trica: %.4f\" % media\n\treturn media\n\t\n\t\ndef media_harmonica(lista_valores):\n\tsoma = 0.0\n\tfor i in range(len(lista_valores)):\n\t\tsoma += (1.0/float(lista_valores[i]))\n\tmedia = len(lista_valores) / soma \n\tprint \"M\u00e9dia Harm\u00f4nica: %.4f\" % media\n\treturn media\n\n\nwhile True:\n\ttipo_media = raw_input().split()\n\tif tipo_media[0] == \"Q\":\n\t\tbreak\n\telse:\n\t\tvalores = raw_input().split()\n\t\tfor i in range(len(tipo_media)):\n\t\t\tif tipo_media[i] == \"MA\":\n\t\t\t\tmedia_aritmetica(valores)\n\t\t\telif tipo_media[i] == \"MG\":\n\t\t\t\tmedia_geometrica(valores)\n\t\t\telif tipo_media[i] == \"MH\":\n\t\t\t\tmedia_harmonica(valores)\n\t\tprint \"----\"\n\t\t\t\n",
+      "name": "calcula_de_medias.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a8d012971a400fe81b1fc7b926f4dc9c",
+  "iid": 5837838054588416,
+  "activity_revision": "1.0.1"
+}

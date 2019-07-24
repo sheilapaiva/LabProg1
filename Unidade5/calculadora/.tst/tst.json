@@ -1,0 +1,18 @@
+{
+  "files": {
+    "calculadora.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 5 \tQuest\u00e3o: Calculadora\n\nwhile True:\n\tlista = raw_input().split(\" \")\n\t\n\tif len(lista) < 3:\n\t\tbreak\n\t\t\n\toperacao = int(lista[0])\n\toperando1 = int(lista[1])\n\toperando2 = int(lista[2])\n\t\n\tif operacao == 1:\n\t\tprint operando1 + operando2\n\t\n\telif operacao == 2:\n\t\tprint operando1 - operando2\n\t\n\telif operacao == 3:\n\t\tprint operando1 * operando2\n\t\n\telif operacao == 4:\n\t\tif operando2 == 0:\n\t\t\tprint \"Erro: Divis\u00e3o por 0\"\n\t\t\tbreak\n\t\telse:\n\t\t\tprint operando1 / operando2\n\t\n\telif operacao == 5:\n\t\tbreak\n",
+      "name": "calculadora.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 0,\n      \"lloc\": 16,\n      \"vhalstead\": 213.67,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "aa94cbfa652e84b6e3e69f461496deeb",
+  "iid": 5322240316932096,
+  "activity_revision": "1.0.2"
+}

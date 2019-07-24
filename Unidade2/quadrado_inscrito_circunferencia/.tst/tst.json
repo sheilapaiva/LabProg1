@@ -1,0 +1,14 @@
+{
+  "files": {
+    "quadrado_inscrito_circunferencia.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nimport math\n\nlado = float(raw_input())\n\na = (((lado/ 2) ** 2) + ((lado / 2) ** 2))\nraio = math.sqrt(a)\ncircunferencia = (math.pi * (raio * 2))\narea = (math.pi * (raio ** 2))\n\nprint \"Per\u00edmetro: %.5f\" % circunferencia\nprint \"\u00c1rea: %.5f\" % area\n",
+      "name": "quadrado_inscrito_circunferencia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "74fe598e7281d95d5525e9c267ee8c5e",
+  "iid": 4997954280620032,
+  "activity_revision": "1.1.1"
+}

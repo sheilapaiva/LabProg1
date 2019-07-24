@@ -1,0 +1,18 @@
+{
+  "files": {
+    "encontra_elemento.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Encontra Elemento\n\nnumero = int(raw_input())\nsequencia_numeros = list(raw_input().split(\" \"))\n\nparar_sequencia = 0\nnumero_sequencia = 0\nfor i in range(len(sequencia_numeros)):\n\tnumero_sequencia = int(sequencia_numeros[i])\n\tif numero == numero_sequencia and parar_sequencia == 0:\n\t\tprint \"sim\"\n\t\tparar_sequencia = 1\nif parar_sequencia == 0:\n\tprint \"n\u00e3o\"\n",
+      "name": "encontra_elemento.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 8,\n      \"vhalstead\": 4.75,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8531453d6ad45b792353f6ebb1301bd5",
+  "iid": 6128698306592768,
+  "activity_revision": "1.0.1"
+}

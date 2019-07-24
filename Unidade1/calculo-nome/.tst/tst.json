@@ -1,0 +1,14 @@
+{
+  "files": {
+    "calculo-nome.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnome = str(raw_input(\"Nome? \"))\nvalor = float(raw_input(\"Letra? R$ \"))\n\n#valor_total = float(len(nome) * valor)\n\nprint \"Or\u00e7amento: R$ \" + str(len(nome) * valor)\n",
+      "name": "calculo-nome.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a33ca4a8ef7a02e10917800ed003ca88",
+  "iid": 5887156660731904,
+  "activity_revision": "1.0.0"
+}

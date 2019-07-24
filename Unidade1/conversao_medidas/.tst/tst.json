@@ -1,0 +1,14 @@
+{
+  "files": {
+    "conversao-medidas.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nmilhas = float(raw_input())\nlibras = float(raw_input())\ngaloes = float(raw_input())\n\nkm = (milhas * 1.60934)\nkg = (libras * 0.453592)\nlitros = (galoes * 3.78541)\n\nprint \"%.5f %f %.5f\" % (km, kg, litros)\n",
+      "name": "conversao-medidas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "39a8ef7fb115d8400566d27cf92000ee",
+  "iid": 5978210302951424,
+  "activity_revision": "1.0.0"
+}

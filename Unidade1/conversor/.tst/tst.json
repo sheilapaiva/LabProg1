@@ -1,0 +1,14 @@
+{
+  "files": {
+    "conversor.py": {
+      "category": "answer",
+      "data": "f = float(raw_input())\nc = ((f-32)*(0.5555555556))\nk = c+(273.15)\nprint \"Fahrenheit: %.3f F\" % (f)\nprint \"Celsius: %.3f C\" % (c)\nprint \"Kelvin: %.3f K\" % (k)\n",
+      "name": "conversor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c3b234f09f69ec6c0d61687338813c71",
+  "iid": 5874099591053312,
+  "activity_revision": "1.1.2"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mega_tripla.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum1 = int(raw_input())\nnum2 = int(raw_input())\nnum3 = int(raw_input())\n\nnum1 = int(num1 % 11)\nnum2 = int(num2 % 11)\nnum3 = int(num3 % 11)\n\nprint \"%02.0d-%02.0d-%02.0d\" % (num1, num2, num3)\n",
+      "name": "mega_tripla.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "27f3014992e83f661804950bdf475619",
+  "iid": 5892477252796416,
+  "activity_revision": "1.0.1"
+}

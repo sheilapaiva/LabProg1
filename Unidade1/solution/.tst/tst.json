@@ -1,0 +1,14 @@
+{
+  "files": {
+    "solution.py": {
+      "category": "answer",
+      "data": "c = float(raw_input())\nf = (1.8*c)+32\nprint (f)\n",
+      "name": "solution.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ac4912c34636cf9e4ad137743b4a4b00",
+  "iid": 5867007694077952,
+  "activity_revision": "1.1.8"
+}

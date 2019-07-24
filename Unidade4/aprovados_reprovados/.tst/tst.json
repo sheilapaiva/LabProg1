@@ -1,0 +1,18 @@
+{
+  "files": {
+    "aprovados_reprovados.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nquantidade_alunos = int(raw_input())\nmedia_alunos_reprovados = 0\nmedia_alunos_aprovados = 0\ni = 0\ncontar_reprovados = 0\ncontar_aprovados = 0\nnumeros = range(quantidade_alunos)\n\nfor i in numeros:\n\tmedia = float(raw_input())\n\tif media < 7:\n\t\tmedia_alunos_reprovados = media_alunos_reprovados + media\n\t\tcontar_reprovados = contar_reprovados + 1 \n\tif media >= 7:\n\t\tmedia_alunos_aprovados = media_alunos_aprovados + media\n\t\tcontar_aprovados = contar_aprovados + 1 \n\nprint \"Reprovados: %d\" % contar_reprovados\nif contar_reprovados >= 1:\n\tprint \"M\u00e9dia: %.1f\" % float(media_alunos_reprovados / contar_reprovados)\n\nprint \"\"\nprint \"Aprovados: %d\" % contar_aprovados\nif contar_aprovados >= 1:\n\tprint \"M\u00e9dia: %.1f\" % float(media_alunos_aprovados / contar_aprovados)\n\t\n",
+      "name": "aprovados_reprovados.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 165.67,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "53834e0520fc1234ff2d64169a69d150",
+  "iid": 6068112524836864,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dia_normal.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ndia_semana = str(raw_input())\nquantidade_clientes = int(raw_input())\n\nif dia_semana == \"segunda\" or dia_semana == \"ter\u00e7a\" or dia_semana == \"quarta\" or dia_semana == \"quinta\" or dia_semana == \"sexta\":\n\tif quantidade_clientes >= 40 and quantidade_clientes <= 60:\n\t\tprint \"normal\"\n\t\n\telse:\n\t\tprint \"at\u00edpico\"\n\t\t\nif dia_semana == \"s\u00e1bado\" or dia_semana == \"domingo\":\n\tif quantidade_clientes >= 40:\n\t\tprint \"normal\"\n\t\n\telse:\n\t\tprint \"at\u00edpico\"\n",
+      "name": "dia_normal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4267a2cabd9fe1112441f7dd1ff55926",
+  "iid": 5241096036679680,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "inteiros_positivos_divisiveis.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 4 \tQuest\u00e3o: \u00cdnteiros Positivos Divis\u00edveis\n\na = int(raw_input())\nb = int(raw_input())\nk = int(raw_input())\n\nfor i in range(1,k + 1):\n\tif i % a == 0:\n\t\tif i % b == 0:\n\t\t\tprint i\n",
+      "name": "inteiros_positivos_divisiveis.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6fe0c3f3f8c59231cc1200a68e31975a",
+  "iid": 5268939235917824,
+  "activity_revision": "1.1.0"
+}

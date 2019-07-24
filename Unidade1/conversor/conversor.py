@@ -1,0 +1,6 @@
+f = float(raw_input())
+c = float((f-32)*(0.5555555556))
+k = c+(273.15)
+print "Fahrenheit: %.3f F" % (f)
+print "Celsius: %.3f C" % (c)
+print "Kelvin: %.3f K" % (k)

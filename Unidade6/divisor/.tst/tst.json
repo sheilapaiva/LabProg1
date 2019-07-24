@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ndivisor = getattr(undertest, 'divisor', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        lista1 = [100,10,40,50]\n        lista2 = [3,15,50,23,5]\n        assert divisor(10, lista1) == 0\n        assert divisor(5, lista2) == 1\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "divisor.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: Divisor\n\ndef divisor(num, lista):\n\tindice = -1\n\tfor i in range(len(lista)):\n\t\tif lista[i] % num == 0:\n\t\t\tindice = i\n\t\t\tbreak\n\treturn indice\n",
+      "name": "divisor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "40670229ca2d4626885e9e8a326329f6",
+  "iid": 6344607554076672,
+  "activity_revision": "1.0.0"
+}

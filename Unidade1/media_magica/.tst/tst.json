@@ -1,0 +1,14 @@
+{
+  "files": {
+    "media_magica.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnum1 = float(raw_input())\nnum2 = float(raw_input())\nnum3 = float(raw_input())\n\nmedia = float((num1 + num2 + num3) / 3)\n\nprint \"%.3f\" % media\n",
+      "name": "media_magica.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0cf5b76b3efb5a65ec712500a26c036f",
+  "iid": 6013188181065728,
+  "activity_revision": "1.1.1"
+}

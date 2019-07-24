@@ -1,0 +1,14 @@
+{
+  "files": {
+    "quadrado_circunferencia.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nimport math\n\nraio = float(raw_input())\n\narea_circunferencia = (math.pi * (raio ** 2))\nlado_quadrado = (raio * math.sqrt(2))\narea_quadrado = (lado_quadrado ** 2)\ndiferenca = (area_circunferencia - area_quadrado)\n\nprint \"\u00c1rea n\u00e3o comum: %.5f\" % diferenca\n",
+      "name": "quadrado_circunferencia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d54eb9a1f294c89cb85b1d3d0f068889",
+  "iid": 6626092026691584,
+  "activity_revision": "1.1.1"
+}

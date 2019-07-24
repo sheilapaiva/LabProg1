@@ -1,0 +1,14 @@
+{
+  "files": {
+    "conversao_nota_conceito.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\nnota4 = float(raw_input())\n\nmedia = ((nota1 + nota2 + nota3 + nota4) / 4)\n\nif media >= 9:\n\tprint \"Conceito A.\"\nelif media >= 7.5 and media < 9:\n\tprint \"Conceito B.\"\nelif media >= 6 and media < 7.5:\n\tprint \"Conceito C.\"\nelif media >= 4 and media < 6:\n\tprint \"Conceito D.\"\nelse:\n\tprint \"Conceito E.\"\n",
+      "name": "conversao_nota_conceito.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1a609574062fffcf920db4d3c6cd78e1",
+  "iid": 4550030564261888,
+  "activity_revision": "1.0.1"
+}

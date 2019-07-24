@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 24,\n      \"vhalstead\": 171.3,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "media_dos_extremos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 4    Quest\u00e3o: M\u00e9dia dos Extremos\n\nn = int(raw_input())\n\nlista_numeros = []\nfor i in range(n):\n\tlista_numeros.append(int(raw_input()))\n\t\nmaior, menor = 0, lista_numeros[0]\nfor j in range(len(lista_numeros)):\n\tif abs(lista_numeros[j]) > maior:\n\t\tmaior = lista_numeros[j]\n\tif lista_numeros[j] < menor:\n\t\tmenor = lista_numeros[j]\n\nmedia, cont_maior, cont_menor = ((maior + menor) / 2.0), 0, 0\nfor k in range(len(lista_numeros)):\n\tif lista_numeros[k] < media:\n\t\tcont_menor += 1\n\telif lista_numeros[k] > media:\n\t\tcont_maior += 1\n\nprint \"Menor n\u00famero: %d\" % menor\nprint \"Maior n\u00famero: %d\" % maior\nprint \"M\u00e9dia dos extremos: %.2f\" % media\nprint \"%d n\u00famero(s) abaixo da m\u00e9dia\" % cont_menor\nprint \"%d n\u00famero(s) acima da m\u00e9dia\" % cont_maior\n",
+      "name": "media_dos_extremos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "63465d5535bfc45951046bf82d7dd1b5",
+  "iid": 5004455216939008,
+  "activity_revision": "1.1.1"
+}

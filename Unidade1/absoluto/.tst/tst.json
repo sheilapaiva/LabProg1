@@ -1,0 +1,14 @@
+{
+  "files": {
+    "absoluto.py": {
+      "category": "answer",
+      "data": "#coding: utf-8 \n\nnum = int(raw_input())\nabsoluto = abs(num)\nprint \"%d\" % absoluto\n",
+      "name": "absoluto.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "67cbf71c2801b3689dc4444c63723a6f",
+  "iid": 5495377729945600,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\neh_quadrado_magico = getattr(undertest, 'eh_quadrado_magico', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n        assert eh_quadrado_magico([[2,7,6],[9,5,1],[4,3,8]])\n\n    def test_2(self):\n        assert not eh_quadrado_magico([[1,2,3],[4,5,6]])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "eh_quadrado_magico.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 9    Quest\u00e3o: \u00c9 Quadrado M\u00e1gico?\n\n\ndef ha_repetidos(m):\n\tfor i in range(len(m)):\n\t\tfor j in range(len(m[i])):\n\t\t\tfor k in range(len(m)):\n\t\t\t\tfor l in range(len(m[k])):\n\t\t\t\t\tif i != k and j != l and m[i][j] == m[k][l]:\n\t\t\t\t\t\treturn True\n\treturn False\n\n\ndef numero_linhas_colunas(m):\n\tcont_colunas = 0\n\tfor j in range(len(m[0])):\n\t\tcont_colunas += 1\n\tif cont_colunas == len(m):\n\t\treturn True\n\treturn False\n\n\ndef sao_iguais(lista):\n\teh_igual = 0\n\tfor k in range(len(lista)):\n\t\tfor l in range(len(lista)):\n\t\t\tif lista[k] == lista[l] and k != l:\n\t\t\t\teh_igual += 1\n\t\t\t\tbreak\n\tif eh_igual == (len(lista)):\n\t\treturn True\n\telse:\t\n\t\treturn False\n\n\ndef somar_linhas(m):\n\tsomas = []\n\tfor i in range(len(m)):\n\t\tsoma = 0\n\t\tfor j in range(len(m[i])):\n\t\t\tsoma += m[i][j]\n\t\tsomas.append(soma)\n\t\t\n\tif sao_iguais(somas) == True:\n\t\treturn somas[0]\n\telif sao_iguais(somas) == False:\n\t\treturn 0\n\t\n\t\ndef soma_colunas(m):\n\tsomas = []\n\tfor j in range(len(m[0])):\n\t\tsoma = 0\n\t\tfor i in range(len(m)):\n\t\t\tsoma += m[i][j]\n\t\tsomas.append(soma)\n\t\n\tif sao_iguais(somas) == True:\n\t\treturn somas[0]\n\telif sao_iguais(somas) == False:\n\t\treturn 0\n\n\ndef soma_diagonal_principal(m):\n\tsomas =  0\n\tfor i in range(len(m)):\n\t\tsoma = 0\n\t\tfor j in range(len(m[i])):\n\t\t\tif i == j:\n\t\t\t\tsoma += m[i][j]\n\t\tsomas += soma\n\treturn somas\n\t\n\t\ndef soma_diagonal_secundaria(m):\n\tsomas = 0\n\tfor i in range(len(m)):\n\t\tsoma = 0\n\t\tfor j in range(len(m[i])):\n\t\t\tif j == (len(m) -1 - i):\n\t\t\t\tsoma += m[i][j]\n\t\tsomas += soma\n\treturn somas\n\n\ndef eh_quadrado_magico(matriz):\n\tif numero_linhas_colunas(matriz) == True:\n\t\tif ha_repetidos(matriz) == False:\n\t\t\ttodas_somas = []\n\t\t\ttodas_somas.append(somar_linhas(matriz))\n\t\t\ttodas_somas.append(soma_colunas(matriz))\n\t\t\ttodas_somas.append(soma_diagonal_principal(matriz))\n\t\t\ttodas_somas.append(soma_diagonal_secundaria(matriz))\n\t\t\tprint todas_somas\n\t\t\tif sao_iguais(todas_somas) == True:\n\t\t\t\treturn True\n\t\t\telse:\n\t\t\t\treturn False\n\treturn False\n",
+      "name": "eh_quadrado_magico.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cea9262a1b0e2ba12feaa28dd928903b",
+  "iid": 5021903924232192,
+  "activity_revision": "1.0.0"
+}

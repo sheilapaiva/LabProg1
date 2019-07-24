@@ -1,0 +1,14 @@
+{
+  "files": {
+    "tinta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 1 \tQuest\u00e3o: Pintor\n\naltura = float(raw_input())\nlargura = float(raw_input())\n\narea_parede = (altura * largura)\ngalao_metro_quadrado = (3.6 / 50)\nlitros_tinta = (area_parede * galao_metro_quadrado)\n\nprint \"%.2f l\" % litros_tinta\n",
+      "name": "tinta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fc60639eeded703cc107f06beb88b9cd",
+  "iid": 6707494676070400,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_seguro = getattr(undertest, 'calcula_seguro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_seguro(2000.0, [21, True, True, True, True, True, 'Misto']) == [120, \"Risco Alto\", 600.0]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "calculo_de_seguro.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: C\u00e1lculo de Seguro\n\ndef calcula_seguro(valor_carro, lista):\n\tpontuacao = 0\n\tif lista[0] <= 21:\n\t\tpontuacao += 20\n\telif lista[0] >= 22 and lista[0] <= 30:\n\t\tpontuacao += 15\n\telif lista[0] >= 31 and lista[0] <= 40:\n\t\tpontuacao += 12\n\telif lista[0] >= 41 and lista[0] <= 60:\n\t\tpontuacao += 10\n\telif lista[0] > 60:\n\t\tpontuacao += 20\n\t\t\n\tif lista[1] == True:\n\t\tpontuacao += 10\n\telif lista[1] == False:\n\t\tpontuacao += 20\n\t\t\n\tif lista[2] == True:\n\t\tpontuacao += 20\n\telif lista[2] == False:\n\t\tpontuacao += 10\n\t\t\n\tif lista[3] == True:\n\t\tpontuacao += 20\n\telif lista[3] == False:\n\t\tpontuacao += 10\n\t\t\n\tif lista[4] == True:\n\t\tpontuacao += 20\n\telif lista[4] == False:\n\t\tpontuacao += 10\n\t\t\n\tif lista[5] == True:\n\t\tpontuacao += 10\n\telif lista[5] == False:\n\t\tpontuacao += 20\n\t\t\n\tif lista[6] == \"Lazer\":\n\t\tpontuacao += 20\n\telif lista[6] == \"Misto\":\n\t\tpontuacao += 20\n\telif lista[6] == \"Trabalho\":\n\t\tpontuacao += 10\n\t\t\n\tif pontuacao <= 80:\n\t\trisco = \"Risco Baixo\"\n\t\tvalor_seguro = valor_carro * 0.1\n\telif pontuacao > 80 and pontuacao <= 100:\n\t\trisco = \"Risco Medio\"\n\t\tvalor_seguro = valor_carro * 0.2\n\telif pontuacao > 100:\n\t\trisco = \"Risco Alto\"\n\t\tvalor_seguro = valor_carro * 0.3\n\t \n\treturn [pontuacao, risco, valor_seguro]\n",
+      "name": "calculo_de_seguro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9b5c2e3745e88e3dcefd1b2c54c27ad1",
+  "iid": 6175388191424512,
+  "activity_revision": "1.0.0"
+}

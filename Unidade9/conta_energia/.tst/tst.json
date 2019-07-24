@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_conta = getattr(undertest, 'calcula_conta', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n        tabela = [[\"Equipamento\", \"Quantidade\", \"Tempo de Uso (horas)\", \"Potencia (Watts)\"], [\"AR-CONDICIONADO\", 1, 240, 2000], [\"COMPUTADOR\", 2, 150, 180], [\"TV\", 3, 150, 110]]\n\n        assert calcula_conta(tabela) == \"R$ 163.38\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "conta_energia.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 9    Quest\u00e3o: Conta Energia\n\n\ndef calcula_conta(tabela):\n\ttotal_kwh = 0\n\tfor i in range(1, len(tabela)):\n\t\tkwh_aparelho = 1\n\t\tfor j in range(len(tabela[i])):\n\t\t\tif j > 0:\n\t\t\t\tkwh_aparelho  *= tabela[i][j]\n\t\ttotal_kwh += kwh_aparelho / 1000.0\n\t\n\treturn \"R$ %.2f\" % (total_kwh * 0.28)\n",
+      "name": "conta_energia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9315ba39610c6114b7024a465c38d2dc",
+  "iid": 4934817288290304,
+  "activity_revision": "1.0.0"
+}

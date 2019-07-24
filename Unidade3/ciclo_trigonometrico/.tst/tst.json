@@ -1,0 +1,18 @@
+{
+  "files": {
+    "ciclo_trigonometrico.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ngrau = int(raw_input())\n\nif (0 < grau < 90) or (0 < (grau % 360) < 90):\n\tprint \"Quadrante 1\"\n\nelif (90 < grau < 180) or (90 < (grau % 360) < 180):\n\tprint \"Quadrante 2\"\n\nelif (180 < grau < 270) or (180 < (grau % 360) < 270):\n\tprint \"Quadrante 3\"\n\nelif (270 < grau < 360) or (270 < (grau % 360) < 360):\n\tprint \"Quadrante 4\"\n\nelse:\n\tprint \"Sobre eixos\"\n",
+      "name": "ciclo_trigonometrico.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 165.67,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e1cee177b2e94724c5b8a1cc447675a1",
+  "iid": 5065820468150272,
+  "activity_revision": "1.0.3"
+}

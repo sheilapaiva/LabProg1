@@ -1,0 +1,14 @@
+{
+  "files": {
+    "salario_bruto_liquido.py": {
+      "category": "answer",
+      "data": "\n#coding: utf-8\n\nnome = str(raw_input())\nqtd_horas_extras = float(raw_input())\nvalor_salario_minimo = float(raw_input())\nvalor_hora_extra = float(raw_input())\n\nsalario_hora_extra =  (qtd_horas_extras * valor_hora_extra)\nsalario_bruto = (4 * valor_salario_minimo + salario_hora_extra)\ndesconto_inss = (salario_bruto * 0.12)\ndesconto_imposto_renda = (salario_bruto * 0.20)\ndesconto = (desconto_imposto_renda + desconto_inss)\nsalario_liquido = (salario_bruto - desconto)\n\nprint \"O Sal\u00e1rio Bruto de %s \u00e9 de R$ %.2f\" % (nome, salario_bruto)\nprint \"O Sal\u00e1rio L\u00edquido de %s \u00e9 de R$ %.2f\" % (nome, salario_liquido) \n",
+      "name": "salario_bruto_liquido.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "335655930a00c4a4742189ee77072007",
+  "iid": 6643246662942720,
+  "activity_revision": "1.1.0"
+}

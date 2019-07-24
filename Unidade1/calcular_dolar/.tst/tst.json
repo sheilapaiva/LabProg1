@@ -1,0 +1,14 @@
+{
+  "files": {
+    "calcular-dolar.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nvalor_real = float(raw_input(\"Reais? \"))\nvalor_cotacao = float(raw_input(\"Cota\u00e7\u00e3o? \"))\n\nvalor_dolar = float(valor_real * valor_cotacao)\n\nprint \"Convers\u00e3o: $ \" + str(valor_dolar)\n",
+      "name": "calcular-dolar.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "544917756944c29d549f34104cb428b2",
+  "iid": 5196302480572416,
+  "activity_revision": "1.0.1"
+}

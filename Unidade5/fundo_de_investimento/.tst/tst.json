@@ -1,0 +1,18 @@
+{
+  "files": {
+    "fundo_de_investimento.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 5 \tQuest\u00e3o: Fundo de Investimento\n\ncont, media, soma = 0, 0, 0\nwhile True:\n\tinvestimento = float(raw_input())\n\tif investimento >= media: \n\t\tcont += 1\n\t\tsoma += investimento\n\t\tmedia = soma / cont\n\telse:\n\t\tbreak\nprint \"Saldo total do FIS: R$%.2f.\" % soma\nprint \"M\u00e9dia das contribui\u00e7\u00f5es: R$%.2f.\" % media\n",
+      "name": "fundo_de_investimento.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 62.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "57ae0c2aa81f70a523c96b41619da1f8",
+  "iid": 5858639789162496,
+  "activity_revision": "1.0.1"
+}

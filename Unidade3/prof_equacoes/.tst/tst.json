@@ -1,0 +1,18 @@
+{
+  "files": {
+    "eq2grau.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nimport math\n\na = int(raw_input())\nb = int(raw_input())\nc = int(raw_input())\n\ndelta = ((b ** 2) - (4 * a * c))\nd = delta\n\nif delta < 0:\n\tdelta = delta * (-1)\n\t\nx1 = float(((-1 * b) + (math.sqrt(delta))) / (2 * a))\nx2 = float(((-1 * b) - (math.sqrt(delta))) / (2 * a))\n\nif d < 0:\n\tprint \"sem raizes reais\"\n\nelif (x1 > 0 or x1 < 0) and (x2 > 0 or x2 < 0) and (x1 == x2):\n\tprint \"x = %.2f\" % x1\n\nelif (x1 > 0 or x1 < 0) and (x2 > 0 or x2 < 0):\n\tprint \"x1 = %.2f\" % x1\n\tprint \"x2 = %.2f\" % x2\n\t\nelif (x1 > 0 or x1 < 0) and (x2 == 0):\n\tprint \"x = %.2f\" % x1\n\t\nelif (x2 > 0 or x2 < 0) and (x1 == 0):\n\tprint \"x = %.2f\" % x2\n\t\nelse:\n\tprint \"sem raizes reais\"\n",
+      "name": "eq2grau.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 245.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3ef252c377c3867e01d3c60e886e945d",
+  "iid": 5580739936518144,
+  "activity_revision": "1.1.2"
+}

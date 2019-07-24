@@ -1,0 +1,14 @@
+{
+  "files": {
+    "distribuicao_aluno.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nunidade = int(raw_input())\ndeseja_pular = str(raw_input())\nquantidade_questoes_unidade = int(raw_input())\n\nif deseja_pular == \"nao\" or deseja_pular == \"n\u00e3o\":\n\tif unidade >= 1 and unidade <= 4:\n\t\tprint \"O aluno deve assistir aula com o prof Jo\u00e3o.\"\n\n\telif unidade >= 5 and unidade <= 8:\n\t\tprint \"O aluno deve assistir aula com o prof Dalton.\"\n\n\telse:\n\t\tprint \"O aluno deve assistir aula com o prof Jorge.\"\n\t\nif deseja_pular == \"sim\":\n\tif quantidade_questoes_unidade >= 1:\n\t\tif unidade >= 1 and unidade < 4:\n\t\t\tprint \"O aluno deve assistir aula com o prof Jo\u00e3o.\"\n\n\t\telif unidade >= 4 and unidade < 8:\n\t\t\tprint \"O aluno deve assistir aula com o prof Dalton.\"\n\n\t\telse:\n\t\t\tprint \"O aluno deve assistir aula com o prof Jorge.\"\n\t\n\tif quantidade_questoes_unidade == 0:\n\t\tif unidade >= 1 and unidade <= 4:\n\t\t\tprint \"O aluno deve assistir aula com o prof Jo\u00e3o.\"\n\n\t\telif unidade >= 5 and unidade <= 8:\n\t\t\tprint \"O aluno deve assistir aula com o prof Dalton.\"\n\n\t\telse:\n\t\t\tprint \"O aluno deve assistir aula com o prof Jorge.\"\n",
+      "name": "distribuicao_aluno.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1a52ae6f91cf93692a562af9e36d6f8d",
+  "iid": 5803588475420672,
+  "activity_revision": "1.0.2"
+}

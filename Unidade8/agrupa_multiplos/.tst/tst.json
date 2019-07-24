@@ -1,0 +1,19 @@
+{
+  "files": {
+    "agrupa_multiplos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Agrupa M\u00faltiplos \"\"\"\n\ndef agrupa_multiplos(seq, k):\n\tta_agrupado = True\n\twhile ta_agrupado  == True:\n\t\tta_agrupado = False\n\t\tfor i in range(len(seq) -1):\n\t\t\tif seq[i] % k != 0 and seq[i + 1] % k == 0:\n\t\t\t\tseq[i], seq[i + 1] = seq[i + 1], seq[i]\n\t\t\t\tta_agrupado = True\n\t\t\t\tbreak\n\n\treturn seq\n",
+      "name": "agrupa_multiplos.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nagrupa_multiplos = getattr(undertest, 'agrupa_multiplos', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_adicional_1(self):\n        seq = [6, 15, 12, 6, 8, 3, 25, 14, 1, 10, 7]\n\n        agrupa_multiplos(seq, 5)\n        assert seq == [15, 25, 10, 6, 12, 6, 8, 3, 14, 1, 7]\n\n        agrupa_multiplos(seq, 2)\n        assert seq == [10, 6, 12, 6, 8, 14, 15, 25, 3, 1, 7]\n\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bfdea2203a0b023d43fb5dac4e249ac0",
+  "iid": 5870960842375168,
+  "activity_revision": "1.0.0"
+}

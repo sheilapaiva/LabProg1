@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "b2_b10.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 4 \tQuest\u00e3o: B2 para B10\n\nnumero_binario = int(raw_input())\nconversao = str(numero_binario)\ntamanho_numero_binario = len(conversao)\nlista = list(conversao)\nexpoente = tamanho_numero_binario - 1\nnumero_decimal = 0\nn = 0\n\nfor i in range(tamanho_numero_binario):\n\tpotencia = 2 ** expoente\n\texpoente -= 1\n\tnum = int(lista[n])\n\tn += 1\n\tresultado = num * potencia\n\tnumero_decimal += resultado\n\t\n\tprint num, \"*\", potencia, \"=\", resultado\n\t\nprint \"%d(2) = %d(10)\" % (numero_binario, numero_decimal)\n",
+      "name": "b2_b10.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9dab0f3f12aee293af978948c6333071",
+  "iid": 5283455319408640,
+  "activity_revision": "1.0.4"
+}

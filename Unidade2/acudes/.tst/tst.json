@@ -1,0 +1,14 @@
+{
+  "files": {
+    "acudes.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ncapacidade = float(raw_input(\"capacidade? \"))\npercentual = float(raw_input(\"percentual hoje? \"))\ngasto = float(raw_input(\"gasto di\u00e1rio? \"))\n\nvolume = float((capacidade * percentual) / 100)\ndias = int(volume / gasto)\n\nprint \"volume: %.2f\" % volume\nprint \"dias restantes: %d\" % dias\n",
+      "name": "acudes.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "933362f8969375c5342c66b3af9f7275",
+  "iid": 6470010365018112,
+  "activity_revision": "1.1.0"
+}

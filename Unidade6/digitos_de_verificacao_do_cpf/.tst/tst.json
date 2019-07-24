@@ -1,0 +1,19 @@
+{
+  "files": {
+    "digitos_de_verificacao_do_cpf.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: D\u00edgitos de Verifica\u00e7\u00e3o do CPF\n\ndef calcula_digitos_verificacao(string):\n\tmultiplicador, digito_1 = 2, 0\n\tfor i in range(len(string) -1, -1, -1):\n\t\tdigito_1 += (int(string[i]) * multiplicador)\n\t\tmultiplicador += 1\n\t\n\tresto1 = (10 * digito_1) % 11\n\tif resto1 == 10:\n\t\tresto1 = 0\n\t\n\tstring += str(resto1)\n\t\n\tmultiplicador, digito_2 = 2, 0\n\tfor i in range(len(string) -1, -1, -1):\n\t\tdigito_2 += (int(string[i]) * multiplicador)\n\t\tmultiplicador += 1\n\t\n\tresto2 = (10 * digito_2) % 11\n\tif resto2 == 10:\n\t\tresto2 = 0\n\t\n\tverificador = str(resto1) + str(resto2)\n\t\n\treturn verificador\n",
+      "name": "digitos_de_verificacao_do_cpf.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_digitos_verificacao = getattr(undertest, 'calcula_digitos_verificacao', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_digitos_verificacao('153245875') == '40'\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7776436d5fa4d8abbf4c8d278865ec3e",
+  "iid": 5834582200942592,
+  "activity_revision": "1.0.1"
+}

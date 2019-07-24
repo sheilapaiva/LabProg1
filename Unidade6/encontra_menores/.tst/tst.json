@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nencontra_menores = getattr(undertest, 'encontra_menores', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_adicional_1(self):\n      assert encontra_menores(3, [2,1,1,1,1,1]) == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "encontra_menores.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: Encontra Menores\n\ndef encontra_menores(num, lista):\n\tmenor_numero = -1\n\tfor i in range(len(lista)):\n\t\tif lista[i] < num:\n\t\t\tmenor_numero = lista[i]\n\t\t\tbreak\n\treturn menor_numero\n\n#lista1 = [100,200,300,400]\n#lista2 = [15, 12, 4, 9, 10]\t\n#a = encontra_menores(100, lista1)\n#b = encontra_menores(10, lista2)\n#print a, b\n",
+      "name": "encontra_menores.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c8ae50762d0e8333eb9adee099d34eee",
+  "iid": 5771364107550720,
+  "activity_revision": "1.0.0"
+}

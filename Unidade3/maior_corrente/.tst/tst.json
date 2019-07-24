@@ -1,0 +1,14 @@
+{
+  "files": {
+    "maior_corrente.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ntensao1 = int(raw_input())\nresistencia1 = float(raw_input())\ntensao2 = int(raw_input())\nresistencia2 = float(raw_input())\ntensao3 = int(raw_input())\nresistencia3 = float(raw_input())\n\ncorrente1 = tensao1 / resistencia1\ncorrente2 = tensao2 / resistencia2\ncorrente3 = tensao3 / resistencia3\n\nif corrente1 > corrente2 and corrente1 > corrente3:\n\tprint \"condutor com maior corrente: 1\"\n\tif corrente1 >= 1:\n\t\tprint \"maior corrente: %.2f A\" % corrente1\n\tif corrente1 < 1 and corrente1 > 0.001:\n\t\tcorrente1 = corrente1 * 1000\n\t\tprint \"maior corrente: %.2f mA\" % corrente1\n\tif corrente1 <= 0.001:\n\t\tcorrente1 = (corrente1 * 1000) * 1000\n\t\tprint \"maior corrente: %.2f \u00b5A\" % corrente1\n\t\nif corrente2 > corrente1 and corrente2 > corrente3:\n\tprint \"condutor com maior corrente: 2\"\n\tif corrente2 >= 1:\n\t\tprint \"maior corrente: %.2f A\" % corrente2\n\tif corrente2 < 1 and corrente2 > 0.001:\n\t\tcorrente2 = corrente2 * 1000\n\t\tprint \"maior corrente: %.2f mA\" % corrente2\n\tif corrente2 <= 0.001:\n\t\tcorrente2 = (corrente2 * 1000) * 1000\n\t\tprint \"maior corrente: %.2f \u00b5A\" % corrente2\n\t\nif corrente3 > corrente1 and corrente3 > corrente2:\n\tprint \"condutor com maior corrente: 3\"\n\tif corrente3 >= 1:\n\t\tprint \"maior corrente: %.2f A\" % corrente3\n\tif corrente3 < 1 and corrente3 > 0.001:\n\t\tcorrente3 = corrente3 * 1000\n\t\tprint \"maior corrente: %.2f mA\" % corrente3\n\tif corrente3 <= 0.001:\n\t\tcorrente3 = (corrente3 * 1000) * 1000\n\t\tprint \"maior corrente: %.2f \u00b5A\" % corrente3\n\t\nif corrente1 == corrente2 and corrente1 > corrente3 or corrente1 == corrente3 and corrente1 > corrente2:\n\tprint \"condutor com maior corrente: 1\"\n\tif corrente1 >= 1:\n\t\tprint \"maior corrente: %.2f A\" % corrente1\n\tif corrente1 < 1 and corrente1 > 0.001:\n\t\tcorrente1 = corrente1 * 1000\n\t\tprint \"maior corrente: %.2f mA\" % corrente1\n\tif corrente1 <= 0.001:\n\t\tcorrente1 = (corrente1 * 1000) * 1000\n\t\tprint \"maior corrente: %.2f \u00b5A\" % corrente1\n\t\t\t\n\nif corrente2 == corrente3 and corrente2 > corrente1:\n\tprint \"condutor com maior corrente: 2\"\n\tif corrente2 >= 1:\n\t\tprint \"maior corrente: %.2f A\" % corrente2\n\tif corrente2 < 1 and corrente2 > 0.001:\n\t\tcorrente2 = corrente2 * 1000\n\t\tprint \"maior corrente: %.2f mA\" % corrente2\n\tif corrente2 <= 0.001:\n\t\tcorrente2 = (corrente2 * 1000) * 1000\n\t\tprint \"maior corrente: %.2f \u00b5A\" % corrente2\n\t\t\n\t\t\n\t\t\n",
+      "name": "maior_corrente.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "935ecf5cc71c6d772582564c3757729a",
+  "iid": 5784599552589824,
+  "activity_revision": "1.1.1"
+}

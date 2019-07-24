@@ -1,0 +1,14 @@
+{
+  "files": {
+    "unidades_e_medidas.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 2 \tQuest\u00e3o: Unidades e Medidas\n\nmedida_metros = float(raw_input())\n\ncentimetros = (medida_metros * 100)\npolegadas = ((36 / 91.44) * centimetros)\npes = ((3 / 91.44) * centimetros)\njarda = ((1 / 91.44) * centimetros)\n\nprint \"Jardas: %.3f yd\" % jarda\nprint \"P\u00e9s: %.3f ft\" % pes\nprint \"Polegadas: %.3f in\" % polegadas\n",
+      "name": "unidades_e_medidas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5378d1c408266997e8e533bfda8807c3",
+  "iid": 5578671976873984,
+  "activity_revision": "1.1.0"
+}

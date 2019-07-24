@@ -1,0 +1,14 @@
+{
+  "files": {
+    "abaixo_da_media.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 5 \tQuest\u00e3o: Abaixo da m\u00e9dia\n\ntamanho = []\nwhile True:\n    linha = raw_input()\n    if linha == \"fim\": \n\t\tbreak\n    tamanho.append(linha)\n   \nmedia = 0.0 \nfor i in range(len(tamanho)):\n    tamanho[i] = int(tamanho[i])\n    media += tamanho[i]\nmedia = media / len(tamanho)\nprint \"%.2f\" % media\n\nfor j in range(len(tamanho)):\n\tif tamanho[j] < media:\n\t\tprint \"%d %s\" % (j + 1, tamanho[j])\n",
+      "name": "abaixo_da_media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1860e8c4c33271345c8f910bb9116822",
+  "iid": 5105413993267200,
+  "activity_revision": "1.0.1"
+}

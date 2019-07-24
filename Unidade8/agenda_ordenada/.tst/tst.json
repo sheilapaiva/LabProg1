@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agenda_ordenada.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Agenda Ordenada\n\ndef ordenar(lista):\n\tta_ordenado = True\n\twhile ta_ordenado  == True:\n\t\tta_ordenado = False\n\t\tfor i in range(len(lista) -1):\n\t\t\tif lista[i] > lista[i + 1]:\n\t\t\t\tlista[i], lista[i + 1] = lista[i + 1], lista[i]\n\t\t\t\tta_ordenado  = True\n\t\t\t\tbreak\n\n\treturn lista\t\t\n\n\nagenda = []\nwhile True:\n\tnome = raw_input()\n\tif nome == \"####\": \n\t\tbreak\n\t\n\tagenda.append(nome)\n\tordenar(agenda)\n\t\n\tfor i in agenda:\n\t\tif i == nome:\n\t\t\tprint \"* %s\" % nome\n\t\telse:\n\t\t\tprint i\n\tprint \"----\"\n",
+      "name": "agenda_ordenada.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1255375aaf54d6e3a8567107e9cb6ab7",
+  "iid": 5803378055577600,
+  "activity_revision": "1.0.0"
+}

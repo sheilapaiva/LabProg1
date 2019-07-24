@@ -1,0 +1,18 @@
+{
+  "files": {
+    "caixa_preta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: Caixa Preta\n\nnumero_medicoes = int(raw_input())\n\nlista = []\ncont = 0\nparar_if = 0\nfor i in range(numero_medicoes):\n\tlista = raw_input().split(\" \")\n\tpeso = int(lista[0])\n\tcombustivel = int(lista[1])\n\taltitude = int(lista[2])\n\t\t\n\tif peso >= 0 and parar_if == 0:\n\t\tcont += 1\n\t\t\n\tif peso < 0 and parar_if == 0:\n\t\tparar_if = 1\n\t\tprint \"dado inconsistente. peso negativo.\"\n\t\t\n\tif combustivel >= 0 and parar_if == 0:\n\t\tcont += 1\n\t\t\n\tif combustivel < 0 and parar_if == 0:\n\t\tparar_if = 1\n\t\tprint \"dado inconsistente. combust\u00edvel negativo.\"\n\t\t\n\tif altitude >= 0 and parar_if == 0:\n\t\tcont += 1\n\t\n\tif altitude < 0 and parar_if == 0:\n\t\tparar_if = 1\n\t\tprint \"dado inconsistente. altitude negativa.\"\n\t\t\nprint \"%d dados v\u00e1lidos.\" % cont\n",
+      "name": "caixa_preta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 117.21,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "646081e258e364c9bc00024caec310d1",
+  "iid": 4638795223793664,
+  "activity_revision": "1.1.1"
+}

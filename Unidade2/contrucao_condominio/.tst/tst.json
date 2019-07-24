@@ -1,0 +1,14 @@
+{
+  "files": {
+    "contrucao_condominio.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nprimeiro_lado = float(raw_input())\nsegundo_lado = float(raw_input())\narea_casa = float(raw_input())\n\narea_terreno = (primeiro_lado * segundo_lado)\nqtd_casas = (area_terreno / area_casa)\n\nprint \"%d casa(s) pode(m) ser constru\u00edda(s) no terreno.\" % qtd_casas\n",
+      "name": "contrucao_condominio.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bfea8a98b3d2791b80d3520acc7b0c21",
+  "iid": 5157747666452480,
+  "activity_revision": "1.1.0"
+}

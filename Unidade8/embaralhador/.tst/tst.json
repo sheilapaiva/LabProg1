@@ -1,0 +1,14 @@
+{
+  "files": {
+    "embaralhador.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Embaralhador\n\n\ndef embaralhador_ge(sequencia_cartas):\n\tcont = 1\n\twhile cont < len(sequencia_cartas):\n\t\tcont += 1\n\t\tfor i in range(len(sequencia_cartas) - 1):\n\t\t\tsequencia_cartas[i], sequencia_cartas[i + 1] = sequencia_cartas[i + 1], sequencia_cartas[i]\n\t\t\t\n\tsequencia = \"\"\n\tfor i in range(len(sequencia_cartas)):\n\t\tif i < len(sequencia_cartas) - 1:\n\t\t\tsequencia += sequencia_cartas[i] + \" \"\n\t\telse:\n\t\t\tsequencia += sequencia_cartas[i]\n\tprint sequencia\n\treturn sequencia_cartas\n\t\n\t\ndef embaralhador_gd(sequencia_cartas):\n\tfor i in range(len(sequencia_cartas) - 1):\n\t\tsequencia_cartas[i], sequencia_cartas[i + 1] = sequencia_cartas[i + 1], sequencia_cartas[i]\n\t\t\t\n\tsequencia = \"\"\n\tfor i in range(len(sequencia_cartas)):\n\t\tif i < len(sequencia_cartas) - 1:\n\t\t\tsequencia += sequencia_cartas[i] + \" \"\n\t\telse:\n\t\t\tsequencia += sequencia_cartas[i]\n\tprint sequencia\n\treturn sequencia_cartas\n\n\ndef embaralhador_i(sequencia_cartas):\n\tfor i in range(0, len(sequencia_cartas) - 1, 2):\n\t\tsequencia_cartas[i], sequencia_cartas[i + 1] = sequencia_cartas[i + 1], sequencia_cartas[i]\n\t\t\t\n\tsequencia = \"\"\n\tfor i in range(len(sequencia_cartas)):\n\t\tif i < len(sequencia_cartas) - 1:\n\t\t\tsequencia += sequencia_cartas[i] + \" \"\n\t\telse:\n\t\t\tsequencia += sequencia_cartas[i]\n\tprint sequencia\n\treturn sequencia_cartas\n\n\nsequencia_cartas = raw_input().split()\n\nwhile True:\n\tcodigo_operacao = raw_input()\n\t\n\tif codigo_operacao == \"fim\":\n\t\tbreak\n\t\n\telse:\n\t\tif codigo_operacao == \"GE\":\n\t\t\tembaralhador_ge(sequencia_cartas)\n\t\telif codigo_operacao == \"GD\":\n\t\t\tembaralhador_gd(sequencia_cartas)\n\t\telif codigo_operacao == \"I\":\n\t\t\tembaralhador_i(sequencia_cartas)\n",
+      "name": "embaralhador.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6506dd3e7cb9ce809c5fab2b06d74c42",
+  "iid": 5344031450071040,
+  "activity_revision": "1.0.0"
+}

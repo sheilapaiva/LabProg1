@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dieta.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nqtd_peso = float(raw_input())\ntempo = float(raw_input())\nqtd_calorias = float(raw_input())\n\npeso = float(qtd_peso * 7700)\nt = float((tempo * 900) + 2000)\nperda_dia = float(t - qtd_calorias)\ndias = float(peso / perda_dia)\n\nprint \"Voc\u00ea precisar\u00e1 de %.2f dias de dieta\" % dias\n",
+      "name": "dieta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ca112dcc5fa4f39d3f15fac8abe2902d",
+  "iid": 4997037036666880,
+  "activity_revision": "1.0.1"
+}

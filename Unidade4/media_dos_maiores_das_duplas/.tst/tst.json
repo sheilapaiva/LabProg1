@@ -1,0 +1,14 @@
+{
+  "files": {
+    "media_dos_maiores_das_duplas.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 4    Quest\u00e3o: M\u00e9dia dos Maiores das Duplas\n\nnumero_duplas = int(raw_input())\nlista = []\nfor i in range(numero_duplas):\n\tdupla = raw_input().split()\n\tif int(dupla[0]) > int(dupla[1]):\n\t\tlista.append(int(dupla[0]))\n\telif int(dupla[1]) > int(dupla[0]):\n\t\tlista.append(int(dupla[1]))\n\nif len(lista) > 1:\n\tmedia = 0.0\n\tfor i in range(len(lista)):\n\t\tmedia += lista[i]\n\tprint \"%.2f\" % (media / len(lista))\nelif len(lista) == 1:\n\tprint \"%.2f\" % float(lista[0])\nelse:\n\tprint \"N\u00e3o \u00e9 poss\u00edvel calcular a m\u00e9dia.\"\n",
+      "name": "media_dos_maiores_das_duplas.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "76fcf30708f5ece39dab1cbe01acafa4",
+  "iid": 5821230905032704,
+  "activity_revision": "1.0.0"
+}

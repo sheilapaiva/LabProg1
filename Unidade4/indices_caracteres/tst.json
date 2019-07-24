@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "ola mundo\naso\n",
+      "output": "2\n-1\n0 8\n"
+    }
+  ]
+}

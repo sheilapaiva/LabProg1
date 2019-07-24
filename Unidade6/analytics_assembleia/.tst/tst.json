@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\n# coding: utf-8\nimport unittest\nimport sys\nimport imp\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        assert conta_votos(votacao, 543) == [1,0]\n\n    def test_exemplo(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        votacao.append('uma,nao,543,marina,PPPP')\n        votacao.append('uma,sim,5,joao,PPPP')\n        votacao.append('uma,nao,543,julio,P')\n        votacao.append('uma,sim,543,carlos,PBBBB')\n        votacao.append('uma,sim,543,juliana,PP')\n        votacao.append('uma,sim,99,joao,PPPP')\n\n        assert conta_votos(votacao, 543) == [3,2]\n\nif __name__ == '__main__':\n\n    undertest = imp.load_source(\"undertest\", sys.argv[-1])\n    conta_votos = undertest.conta_votos\n    del sys.argv[-1]\n    unittest.main()\n"
+    },
+    "analytics_assembleia.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 6 \tQuest\u00e3o: Analytics Assembleia\n\ndef conta_votos(votacoes,id_votacao):\n\tlista, cont_sim, cont_nao = [], 0, 0\n\tfor i in range(len(votacoes)):\n\t\tlista = votacoes[i].split(\",\")\n\t\tif int(lista[2]) == id_votacao:\n\t\t\tif lista[1] == \"sim\":\n\t\t\t\tcont_sim += 1\n\t\t\telif lista[1] == \"nao\":\n\t\t\t\tcont_nao += 1\n\treturn [cont_sim, cont_nao]\n",
+      "name": "analytics_assembleia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b33652313fe1c67f192c5b75896f21d6",
+  "iid": 5213769105932288,
+  "activity_revision": "1.0.0"
+}

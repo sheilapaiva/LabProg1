@@ -1,0 +1,18 @@
+{
+  "files": {
+    "selecao_projeto.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 3    Quest\u00e3o: Sele\u00e7\u00e3o Projeto\n\ncre = float(raw_input())\nexperiencia_meses = int(raw_input())\nnota_entrevista = int(raw_input())\n\nif cre < 7 and experiencia_meses < 6:\n\tprint \"Candidato eliminado. CRE e experi\u00eancia abaixo do limite.\"\nelif cre < 7 and experiencia_meses >= 6:\n\tprint \"Candidato eliminado. CRE abaixo do limite.\"\nelif cre >= 7 and experiencia_meses < 6:\n\tprint \"Candidato eliminado. Experi\u00eancia abaixo do limite.\"\nelif cre >= 7 and experiencia_meses >= 6:\n\tif nota_entrevista <= 3:\n\t\tprint \"Candidato classificado.\"\n\telif nota_entrevista > 3:\n\t\tprint \"Candidato aprovado.\"\n",
+      "name": "selecao_projeto.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 36.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7a36f166c817343303149bcd98c669d0",
+  "iid": 5201745177214976,
+  "activity_revision": "1.0.1"
+}

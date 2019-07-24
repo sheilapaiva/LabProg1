@@ -1,0 +1,14 @@
+{
+  "files": {
+    "imprime-nota-fiscal.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nvalor_total = float(raw_input())\ndata = raw_input()\nquantidade_de_produtos = int(raw_input())\n\nmedia = float(valor_total / quantidade_de_produtos)\n\nprint \"Data: %s\" % data\nprint \"O valor total da compra foi de R$ %.2f. A m\u00e9dia do pre\u00e7o dos produtos \u00e9 de %.1f.\" % (valor_total, media)\n",
+      "name": "imprime-nota-fiscal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "56ff55be2fab5849b67ca11d9bb5abbd",
+  "iid": 4926816334643200,
+  "activity_revision": "1.1.1"
+}

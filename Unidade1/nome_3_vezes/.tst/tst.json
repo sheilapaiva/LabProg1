@@ -1,0 +1,14 @@
+{
+  "files": {
+    "nome_3_vezes.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnome = raw_input()\n\nprint nome\nprint nome\nprint nome\n",
+      "name": "nome_3_vezes.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "dc032ab72274582d7a711d8379739f25",
+  "iid": 5290131778961408,
+  "activity_revision": "1.2.0"
+}

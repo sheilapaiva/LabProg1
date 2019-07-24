@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nflip = getattr(undertest, 'flip', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = [1, 2, 3, 4, 5, 6, 7]\n        assert flip(l1, 2, 5) == None\n        assert l1 == [1, 2, 6, 5, 4, 3, 7]\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "flip.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Flip\n\n\ndef flip(lista, i, j):\t\n\tl = range(len(lista))\n\tta_ordenado = True\n\twhile ta_ordenado  == True:\n\t\t ta_ordenado = False\n\t\t for k in range(i, j):\n\t\t\t if l[k] < l[k + 1]:\n\t\t\t\t print l\n\t\t\t\t l[k], l[k + 1] = l[k + 1], l[k]\n\t\t\t\t lista[k], lista[k + 1] = lista[k + 1], lista[k]\n\t\t\t\t ta_ordenado  = True\n\t\t\t\t break\n\t\t\t\t \n\treturn None\n",
+      "name": "flip.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c0c944faed5f856d5ebb2a88a262518b",
+  "iid": 5834304248610816,
+  "activity_revision": "1.0.0"
+}

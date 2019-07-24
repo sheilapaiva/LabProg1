@@ -1,0 +1,18 @@
+{
+  "files": {
+    "autorizacao_voos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 4 \tQuest\u00e3o: Autoriza\u00e7\u00e3o voos\n\ntempo = int(raw_input())\nquantidade_avioes = int(raw_input())\nautorizado = 0\n\nfor i in range(quantidade_avioes):\n\ttempo_decolagem_aviao = int(raw_input())\n\t\n\tif tempo_decolagem_aviao <= tempo:\n\t\ttempo = (tempo - tempo_decolagem_aviao)\n\t\tautorizado += 1\n\t\nprint \"%d voo(s) autorizados.\" % autorizado\n",
+      "name": "autorizacao_voos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2a856f7c2d8f96bbc496c4847e786436",
+  "iid": 5309407759958016,
+  "activity_revision": "1.1.4"
+}

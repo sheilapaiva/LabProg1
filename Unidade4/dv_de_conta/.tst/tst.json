@@ -1,0 +1,14 @@
+{
+  "files": {
+    "dv_de_conta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluna: Sheila Maria Mendes Paiva \n# Matr\u00edcula: 118210186\n# Unidade 4 \tQuest\u00e3o: DV de Conta\n\nnumero_conta = int(raw_input())\nlista_numero = list(str(numero_conta))\n\nsoma_digitos = 0\nfor i in range(len(lista_numero)):\n\tsoma_digitos += int(lista_numero[i])\n\ndigito_verificador = soma_digitos % 11\n\nif digito_verificador != 10:\n\tprint \"%d-%d\" % (numero_conta, digito_verificador)\nelse:\n\tprint \"%d-X\" % (numero_conta)\n\n",
+      "name": "dv_de_conta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7f46bfc7b0474972c1c1191940e7d101",
+  "iid": 5770342073106432,
+  "activity_revision": "1.1.0"
+}

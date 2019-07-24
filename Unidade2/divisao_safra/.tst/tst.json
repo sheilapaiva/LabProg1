@@ -1,0 +1,14 @@
+{
+  "files": {
+    "divisao_safra.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nqtd_graos = float(raw_input())\nqtd_clientes_atacado = float(raw_input())\nqtd_clientes_varejo = float(raw_input())\n\nvarejo = int(qtd_graos / qtd_clientes_atacado)\na = float(qtd_graos % qtd_clientes_atacado)\natacado = float(a / qtd_clientes_varejo)\nf = \"%.2f\" % atacado\n\nprint \"Clientes no atacado = %.dkg cada.\" % varejo\nprint \"Clientes no varejo = \" + str(f) + \"kg cada.\"\n",
+      "name": "divisao_safra.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6640eb1be28a853dbe39e01accd87629",
+  "iid": 6239700796833792,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nconta_palavras = getattr(undertest, 'conta_palavras', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert conta_palavras(5, \"zero:um:dois:tres:quatro:cinco\") == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "conta_palavras.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#UFCG - Ci\u00eancia da Computa\u00e7\u00e3o\n#Programa\u00e7\u00e3o I e laborat\u00f3rio de Programa\u00e7\u00e3o I\n#Aluna: Sheila Maria Mendes Paiva\n#Unidade: 8    Quest\u00e3o: Conta Palavras\n\ndef conta_palavras(k, palavras):\n\tlista_palavras = palavras.split(\":\")\n\tcont = 0\n\tfor i in range(len(lista_palavras)):\n\t\tif len(lista_palavras[i]) >= k:\n\t\t\tcont += 1\n\tprint lista_palavras\n\treturn cont\n\nassert conta_palavras(5, \"zero:um:dois:tres:quatro:cinco\") == 2\n\n",
+      "name": "conta_palavras.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d50306a81d9bd737d23cdadc902964c7",
+  "iid": 5617270411755520,
+  "activity_revision": "1.0.0"
+}

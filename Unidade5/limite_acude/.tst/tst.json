@@ -1,0 +1,14 @@
+{
+  "files": {
+    "limite_acude.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Aluna: Sheila Maria Mendes Paiva \n#Matr\u00edcula: 118210186\n#Unidade: 5 \tQuest\u00e3o: Limite a\u00e7ude\n\nlimite_superior = float(raw_input())\nnivel_atual = float(raw_input())\n\nwhile nivel_atual < limite_superior:\n\tsequencia_operacao = raw_input().split()\n\toperacao = sequencia_operacao[0]\n\tnivel = float(sequencia_operacao[1])\n\t\n\tif operacao == \"chuva\":\n\t\tnivel_atual += nivel\n\tif operacao == \"afluente\":\n\t\tnivel_atual += nivel\n\tif operacao == \"demanda\" and (nivel_atual - nivel) >= 0:\n\t\tnivel_atual -= nivel\n\t\t\nprint \"A\u00e7ude passou a liberar \u00e1gua.\"\nprint \"N\u00edvel: %.2f\" % nivel_atual\n",
+      "name": "limite_acude.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8884f11842d9ef950e1ba0ea79d57046",
+  "iid": 5859941969559552,
+  "activity_revision": "1.0.1"
+}
